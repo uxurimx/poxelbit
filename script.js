@@ -370,12 +370,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Typing Effect
     new TypingEffect('typing-target', [
-        'Inteligencia Artificial',
-        'Blockchain & Web3',
-        'Agentes Virtuales',
-        'Desarrollo Web',
-        'Sistemas a Medida',
-        'Transformación Digital'
+        'en el mundo digital',
+        'con ventas que no paran',
+        'con un asistente 24/7',
+        'organizado y creciendo',
+        'seguro e imparable',
+        'listo para el futuro'
     ], 80, 1800);
 
     // Initialize all modules
