@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PoxelBit | Soluciones Digitales Potenciadas por IA, Blockchain & Web3</title>
+    <meta name="description" content="PoxelBit — Empresa de soluciones digitales inteligentes. IA, Blockchain, Web3, Agentes Virtuales, Desarrollo Web y Sistemas a medida. México & Canadá.">
+    <meta name="keywords" content="IA, Blockchain, Web3, Agentes Virtuales, Desarrollo Web, Sistemas, PoxelBit, Soluciones Digitales">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="circuit-bg">
+
+    <!-- ======== NAVIGATION ======== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">
+                <div class="logo-icon">
+                    <span></span><span></span><span></span><span></span>
+                </div>
+                POXEL<span style="color: #06B6D4;">BIT</span>
+            </a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#proceso">Proceso</a></li>
+                <li><a href="#ia-agents">IA & Agentes</a></li>
+                <li><a href="#blockchain">Blockchain</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#contacto" class="nav-cta">Habla con Nosotros</a></li>
+            </ul>
+
+            <button class="hamburger" id="hamburger" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ======== HERO ======== -->
+    <section id="hero">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+        <div class="hero-orb hero-orb-3"></div>
+
+        <div class="hero-content">
+            <div class="badge">🚀 Soluciones Digitales de Nueva Generación</div>
+            <h1>
+                Potenciamos tu negocio con<br>
+                <span class="text-gradient typing-container">
+                    <span class="typing-text" id="typing-target">Inteligencia Artificial</span>
+                </span>
+            </h1>
+            <p>
+                Transformamos la complejidad técnica en ecosistemas inteligentes. Desde IA nativa y Blockchain hasta plataformas SaaS que escalan tu visión al siguiente nivel.
+            </p>
+            <div class="hero-buttons">
+                <a href="#contacto" class="btn-primary">
+                    <i data-lucide="rocket" style="width:20px;height:20px;"></i>
+                    Inicia tu Proyecto
+                </a>
+                <a href="#servicios" class="btn-secondary">
+                    <i data-lucide="layers" style="width:20px;height:20px;"></i>
+                    Explorar Servicios
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-scroll-indicator">
+            <a href="#servicios">
+                <span>Descubre más</span>
+                <i data-lucide="chevron-down" style="width:20px;height:20px;"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- ======== SERVICIOS ======== -->
+    <section id="servicios" class="section-padding mesh-gradient">
+        <div class="container">
+            <div style="text-align:center;" class="reveal">
+                <div class="badge">Nuestras Soluciones</div>
+                <h2 class="section-title">Servicios que Impulsan<br><span class="text-gradient">la Próxima Era Digital</span></h2>
+                <p class="section-subtitle">Combinamos tecnologías de vanguardia para crear soluciones que no solo resuelven problemas, sino que abren nuevas oportunidades de negocio.</p>
+            </div>
+
+            <div class="services-grid stagger-children">
+                <!-- 1. IA -->
+                <div class="glass-card service-card reveal">
+                    <div class="service-icon ai">
+                        <i data-lucide="brain-circuit"></i>
+                    </div>
+                    <h3>Inteligencia Artificial</h3>
+                    <p>Modelos de IA personalizados, procesamiento de lenguaje natural, visión computacional y automatización inteligente para tu negocio.</p>
+                    <div class="service-tags">
+                        <span>NLP</span><span>ML</span><span>Computer Vision</span><span>GPT</span>
+                    </div>
+                </div>
+
+                <!-- 2. Blockchain -->
+                <div class="glass-card service-card reveal">
+                    <div class="service-icon blockchain">
+                        <i data-lucide="link"></i>
+                    </div>
+                    <h3>Blockchain & Web3</h3>
+                    <p>Smart contracts, DApps, tokenización de activos y soluciones descentralizadas que garantizan transparencia y seguridad.</p>
+                    <div class="service-tags">
+                        <span>Solidity</span><span>Ethereum</span><span>DeFi</span><span>NFT</span>
+                    </div>
+                </div>
+
+                <!-- 3. Web Dev -->
+                <div class="glass-card service-card reveal">
+                    <div class="service-icon web">
+                        <i data-lucide="globe"></i>
+                    </div>
+                    <h3>Desarrollo Web</h3>
+                    <p>Sitios web de alto rendimiento, aplicaciones web progresivas y plataformas e-commerce con experiencias de usuario impecables.</p>
+                    <div class="service-tags">
+                        <span>React</span><span>Next.js</span><span>Node</span><span>PWA</span>
+                    </div>
+                </div>
+
+                <!-- 4. Agentes Virtuales -->
+                <div class="glass-card service-card reveal">
+                    <div class="service-icon agents">
+                        <i data-lucide="bot"></i>
+                    </div>
+                    <h3>Agentes Virtuales de IA</h3>
+                    <p>Chatbots inteligentes, asistentes virtuales y agentes autónomos que atienden, venden y resuelven 24/7.</p>
+                    <div class="service-tags">
+                        <span>Chatbots</span><span>RAG</span><span>Multi-Agent</span><span>LLM</span>
+                    </div>
+                </div>
+
+                <!-- 5. Sistemas -->
+                <div class="glass-card service-card reveal">
+                    <div class="service-icon systems">
+                        <i data-lucide="server"></i>
+                    </div>
+                    <h3>Sistemas & Software</h3>
+                    <p>ERP, CRM, POS y sistemas empresariales a medida. Arquitectura en la nube que escala con tu operación.</p>
+                    <div class="service-tags">
+                        <span>SaaS</span><span>Cloud</span><span>API</span><span>Microservices</span>
+                    </div>
+                </div>
+
+                <!-- 6. Páginas Web -->
+                <div class="glass-card service-card reveal">
+                    <div class="service-icon pages">
+                        <i data-lucide="layout"></i>
+                    </div>
+                    <h3>Diseño Web & Landing</h3>
+                    <p>Landing pages que convierten, sitios corporativos premium y diseños que posicionan tu marca en el mercado digital.</p>
+                    <div class="service-tags">
+                        <span>UI/UX</span><span>SEO</span><span>Responsive</span><span>Branding</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== PROCESO ======== -->
+    <section id="proceso" class="section-padding">
+        <div class="container">
+            <div style="text-align:center;" class="reveal">
+                <div class="badge">Cómo Trabajamos</div>
+                <h2 class="section-title">Un Proceso <span class="text-gradient">Claro y Ágil</span></h2>
+                <p class="section-subtitle">Desde la idea hasta el lanzamiento, nuestro proceso está diseñado para maximizar resultados y minimizar fricción.</p>
+            </div>
+
+            <div class="process-timeline reveal">
+                <div class="process-step">
+                    <div class="process-number">1</div>
+                    <h3>Descubrimiento</h3>
+                    <p>Analizamos tu negocio, objetivos y competencia para diseñar la estrategia digital perfecta.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">2</div>
+                    <h3>Diseño & Prototipo</h3>
+                    <p>Creamos wireframes y prototipos interactivos para validar la experiencia antes de programar.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">3</div>
+                    <h3>Desarrollo</h3>
+                    <p>Construimos con tecnologías de vanguardia, sprints ágiles y comunicación constante.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">4</div>
+                    <h3>Lanzamiento & Soporte</h3>
+                    <p>Desplegamos, optimizamos y proveemos soporte continuo para asegurar tu éxito.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== IA & AGENTES ======== -->
+    <section id="ia-agents" class="section-padding mesh-gradient parallax-section">
+        <div class="container">
+            <div class="ia-grid">
+                <div class="ia-content reveal-left">
+                    <div class="badge">Tecnología de Vanguardia</div>
+                    <h2 class="section-title" style="text-align:left;">Inteligencia Artificial<br><span class="text-gradient">que Habla tu Idioma</span></h2>
+                    <p style="color: var(--gris-acero); margin-bottom: 0.5rem; line-height:1.8;">
+                        No implementamos IA genérica. Desarrollamos agentes personalizados y contamos con nuestra propia <strong style="color: var(--azul-cyan);">IA Nativa PoxelBit</strong>. Diseñada para integrarse en tu flujo de trabajo.
+                    </p>
+                    <ul class="feature-list">
+                        <li>
+                            <i data-lucide="check-circle" style="width:20px;height:20px;"></i>
+                            <span><strong>Agentes Autónomos</strong> — Bots que ejecutan tareas complejas sin supervisión constante.</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check-circle" style="width:20px;height:20px;"></i>
+                            <span><strong>NLP Avanzado</strong> — Procesamiento de lenguaje natural en español e inglés nativo.</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check-circle" style="width:20px;height:20px;"></i>
+                            <span><strong>Automatización Inteligente</strong> — Flujos que conectan ventas, atención al cliente y operaciones.</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check-circle" style="width:20px;height:20px;"></i>
+                            <span><strong>RAG & Knowledge Base</strong> — IA que aprende de tus documentos y datos únicos.</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check-circle" style="width:20px;height:20px;"></i>
+                            <span><strong>Multi-Agente</strong> — Sistemas donde múltiples IAs colaboran para resolver problemas complejos.</span>
+                        </li>
+                    </ul>
+                    <a href="#contacto" class="btn-primary" style="display:inline-flex;">
+                        <i data-lucide="sparkles" style="width:18px;height:18px;"></i>
+                        Prueba Nuestra IA
+                    </a>
+                </div>
+
+                <div class="ia-visual reveal-right">
+                    <div class="ia-visual-inner">
+                        <div class="ai-orb"></div>
+                        <div class="ai-ring"></div>
+                        <div class="ai-ring"></div>
+                        <div class="ai-ring"></div>
+                        <div class="ai-ring"></div>
+                        <div class="ai-center-icon">
+                            <i data-lucide="bot"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== BLOCKCHAIN / WEB3 ======== -->
+    <section id="blockchain" class="section-padding">
+        <div class="container">
+            <div style="text-align:center;" class="reveal">
+                <div class="badge">Descentralizado & Seguro</div>
+                <h2 class="section-title">Blockchain & Web3<br><span class="text-gradient">para el Futuro</span></h2>
+                <p class="section-subtitle">Llevamos la descentralización al corazón de tu negocio con soluciones blockchain que garantizan transparencia, inmutabilidad y confianza.</p>
+            </div>
+
+            <div class="blockchain-grid stagger-children">
+                <div class="glass-card blockchain-card reveal">
+                    <div class="service-icon blockchain" style="margin:0 0 0.5rem;">
+                        <i data-lucide="file-code-2"></i>
+                    </div>
+                    <span class="card-number">01</span>
+                    <h3>Smart Contracts</h3>
+                    <p>Contratos inteligentes auditados en Solidity y Rust. Automatiza acuerdos, pagos y lógica de negocio sin intermediarios.</p>
+                </div>
+
+                <div class="glass-card blockchain-card reveal">
+                    <div class="service-icon blockchain" style="margin:0 0 0.5rem;">
+                        <i data-lucide="blocks"></i>
+                    </div>
+                    <span class="card-number">02</span>
+                    <h3>DApps & Plataformas</h3>
+                    <p>Aplicaciones descentralizadas con interfaces intuitivas. Marketplaces, DAOs, plataformas DeFi y más.</p>
+                </div>
+
+                <div class="glass-card blockchain-card reveal">
+                    <div class="service-icon blockchain" style="margin:0 0 0.5rem;">
+                        <i data-lucide="coins"></i>
+                    </div>
+                    <span class="card-number">03</span>
+                    <h3>Tokenización & NFTs</h3>
+                    <p>Tokeniza activos reales y digitales. Crea colecciones NFT, tokens de gobernanza y programas de fidelización on-chain.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== TECNOLOGÍAS ======== -->
+    <section id="tecnologias" class="section-padding mesh-gradient">
+        <div class="container">
+            <div style="text-align:center;" class="reveal">
+                <div class="badge">Stack Tecnológico</div>
+                <h2 class="section-title">Tecnologías que <span class="text-gradient">Dominamos</span></h2>
+                <p class="section-subtitle">Elegimos la mejor herramienta para cada trabajo. Nuestro stack combina potencia, escalabilidad y velocidad.</p>
+            </div>
+
+            <div class="tech-grid stagger-children">
+                <div class="tech-item reveal">
+                    <i data-lucide="atom" style="color: #61DAFB;"></i>
+                    React / Next.js
+                </div>
+                <div class="tech-item reveal">
+                    <i data-lucide="hexagon" style="color: #68A063;"></i>
+                    Node.js
+                </div>
+                <div class="tech-item reveal">
+                    <i data-lucide="code-2" style="color: #3178C6;"></i>
+                    TypeScript
+                </div>
+                <div class="tech-item reveal">
+                    <i data-lucide="cloud" style="color: #FF9900;"></i>
+                    AWS / Vercel
+                </div>
+                <div class="tech-item reveal">
+                    <i data-lucide="database" style="color: #336791;"></i>
+                    PostgreSQL
+                </div>
+                <div class="tech-item reveal">
+                    <i data-lucide="brain" style="color: #FF6F61;"></i>
+                    OpenAI / LLMs
+                </div>
+                <div class="tech-item reveal">
+                    <i data-lucide="link" style="color: #7B3FE4;"></i>
+                    Solidity / Web3
+                </div>
+                <div class="tech-item reveal">
+                    <i data-lucide="container" style="color: #2496ED;"></i>
+                    Docker
+                </div>
+                <div class="tech-item reveal">
+                    <i data-lucide="figma" style="color: #F24E1E;"></i>
+                    Figma
+                </div>
+                <div class="tech-item reveal">
+                    <i data-lucide="smartphone" style="color: #02569B;"></i>
+                    React Native
+                </div>
+                <div class="tech-item reveal">
+                    <i data-lucide="git-branch" style="color: #F05032;"></i>
+                    Git / CI/CD
+                </div>
+                <div class="tech-item reveal">
+                    <i data-lucide="shield-check" style="color: #10B981;"></i>
+                    Seguridad Web
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== PORTAFOLIO ======== -->
+    <section id="portafolio" class="section-padding">
+        <div class="container">
+            <div style="text-align:center;" class="reveal">
+                <div class="badge">Nuestro Trabajo</div>
+                <h2 class="section-title">Casos de <span class="text-gradient">Éxito</span></h2>
+                <p class="section-subtitle">Cada proyecto es una historia de transformación. Estas son algunas de las soluciones que hemos construido.</p>
+            </div>
+
+            <!-- Case 1 -->
+            <div class="glass-card portfolio-card reveal">
+                <div class="portfolio-content">
+                    <div class="badge" style="border-color: rgba(37, 99, 235, 0.3); color: var(--azul-claro);">Featured Project</div>
+                    <h3>YUMM: Menú Digital Inteligente</h3>
+                    <p>Plataforma SaaS que redefine la experiencia gastronómica. Menú digital con QR, sistema POS integrado, IA para catálogo automático y carrito compartido en tiempo real con Pusher.</p>
+                    <div class="portfolio-tags">
+                        <span>#SaaS</span><span>#POS</span><span>#IA</span><span>#Real-time</span><span>#PWA</span>
+                    </div>
+                </div>
+                <div class="portfolio-visual">
+                    <div class="portfolio-visual-bg" style="background: linear-gradient(135deg, #1e40af, #7c3aed);"></div>
+                    <div class="portfolio-mockup">
+                        <div class="mockup-bar"></div>
+                        <div class="mockup-row">
+                            <div class="mockup-block"></div>
+                            <div class="mockup-block"></div>
+                        </div>
+                        <div class="mockup-row">
+                            <div class="mockup-block"></div>
+                            <div class="mockup-block"></div>
+                        </div>
+                        <div class="mockup-block-full" style="margin-top:0.5rem;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case 2 -->
+            <div class="glass-card portfolio-card reveal">
+                <div class="portfolio-visual" style="order: -1;">
+                    <div class="portfolio-visual-bg" style="background: linear-gradient(135deg, #065f46, #06b6d4);"></div>
+                    <div class="portfolio-mockup">
+                        <div class="mockup-bar" style="background: rgba(6, 182, 212, 0.3);"></div>
+                        <div class="mockup-block-full" style="height:40px; margin-bottom:0.5rem;"></div>
+                        <div class="mockup-row">
+                            <div class="mockup-block" style="height:80px;"></div>
+                            <div class="mockup-block" style="height:80px;"></div>
+                            <div class="mockup-block" style="height:80px;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-content">
+                    <div class="badge" style="border-color: rgba(6, 182, 212, 0.3); color: var(--azul-cyan);">AI + Web3</div>
+                    <h3>Trading Bot con Inteligencia</h3>
+                    <p>Bot de trading conectado a exchanges como Bybit mediante API. Gestión de posiciones, historial de operaciones y balances en tiempo real con interfaz profesional.</p>
+                    <div class="portfolio-tags">
+                        <span>#Crypto</span><span>#API</span><span>#Trading</span><span>#Real-time</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== MÉTRICAS ======== -->
+    <section id="metricas" class="section-padding">
+        <div class="container">
+            <div class="stats-grid reveal">
+                <div class="stat-item">
+                    <div class="stat-number blue" data-counter data-target="50" data-suffix="+">0</div>
+                    <div class="stat-label">Proyectos Entregados</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number cyan" data-counter data-target="30" data-suffix="+">0</div>
+                    <div class="stat-label">Clientes Satisfechos</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number violet" data-counter data-target="15" data-suffix="+">0</div>
+                    <div class="stat-label">Tecnologías Dominadas</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number green" data-counter data-target="2" data-suffix=" Países">0</div>
+                    <div class="stat-label">Presencia Internacional</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== TESTIMONIOS ======== -->
+    <section id="testimonios" class="section-padding mesh-gradient">
+        <div class="container">
+            <div style="text-align:center;" class="reveal">
+                <div class="badge">Testimonios</div>
+                <h2 class="section-title">Lo que Dicen <span class="text-gradient">Nuestros Clientes</span></h2>
+            </div>
+
+            <div class="testimonials-wrapper reveal">
+                <div class="testimonials-track">
+                    <!-- Slide 1 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card glass-card">
+                            <div class="stars">★★★★★</div>
+                            <blockquote>
+                                PoxelBit transformó por completo nuestra operación. El sistema de menú digital que crearon no solo es hermoso, sino que aumentó nuestras ventas un 40%. Su equipo entiende el negocio, no solo el código.
+                            </blockquote>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">MR</div>
+                                <div class="testimonial-info">
+                                    <h4>Marco Reyes</h4>
+                                    <span>CEO, Restaurante Gourmet</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card glass-card">
+                            <div class="stars">★★★★★</div>
+                            <blockquote>
+                                El agente virtual de IA que desarrollaron para nosotros atiende el 80% de las consultas sin intervención humana. La calidad de las respuestas es impresionante. Un equipo que realmente está en la vanguardia.
+                            </blockquote>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">AL</div>
+                                <div class="testimonial-info">
+                                    <h4>Andrea López</h4>
+                                    <span>Directora de Operaciones, TechMX</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card glass-card">
+                            <div class="stars">★★★★★</div>
+                            <blockquote>
+                                Necesitábamos tokenizar nuestros activos y PoxelBit lo hizo realidad. Smart contracts seguros, auditados y una plataforma Web3 que nuestros inversores aman usar. Profesionalismo de primer mundo.
+                            </blockquote>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">DV</div>
+                                <div class="testimonial-info">
+                                    <h4>Daniel Vargas</h4>
+                                    <span>Fundador, BlockInvest LATAM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-controls">
+                    <button class="testimonial-prev" aria-label="Anterior">
+                        <i data-lucide="chevron-left" style="width:20px;height:20px;"></i>
+                    </button>
+                    <button class="testimonial-next" aria-label="Siguiente">
+                        <i data-lucide="chevron-right" style="width:20px;height:20px;"></i>
+                    </button>
+                </div>
+
+                <div class="testimonial-dots">
+                    <div class="dot active"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== FAQ ======== -->
+    <section id="faq" class="section-padding">
+        <div class="container">
+            <div style="text-align:center;" class="reveal">
+                <div class="badge">FAQ</div>
+                <h2 class="section-title">Preguntas <span class="text-gradient">Frecuentes</span></h2>
+                <p class="section-subtitle">Resolvemos las dudas más comunes sobre nuestros servicios y proceso de trabajo.</p>
+            </div>
+
+            <div class="faq-list reveal">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Qué tipo de empresas atienden?
+                        <i data-lucide="plus" style="width:20px;height:20px;"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Trabajamos con startups, PyMEs y empresas establecidas en México y Canadá. Desde negocios locales que necesitan su primera página web hasta corporativos que requieren sistemas empresariales complejos con IA y Blockchain.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Cuánto tiempo toma un proyecto típico?
+                        <i data-lucide="plus" style="width:20px;height:20px;"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Depende de la complejidad. Una landing page profesional puede estar lista en 1-2 semanas. Un sistema SaaS completo con IA puede tomar 2-4 meses. Siempre trabajamos con sprints ágiles y entregas incrementales para que veas avances desde el primer día.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Desarrollan soluciones con Blockchain aunque mi negocio no sea cripto?
+                        <i data-lucide="plus" style="width:20px;height:20px;"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>¡Absolutamente! Blockchain va mucho más allá de las criptomonedas. Podemos implementar contratos inteligentes para automatizar acuerdos comerciales, sistemas de trazabilidad para cadenas de suministro, tokens de fidelización y más.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Qué diferencia a sus Agentes de IA de un chatbot normal?
+                        <i data-lucide="plus" style="width:20px;height:20px;"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Nuestros agentes van mucho más allá de responder preguntas. Pueden ejecutar acciones, consultar bases de datos, procesar documentos, coordinar con otros agentes y aprender del contexto específico de tu empresa. Son asistentes autónomos que trabajan con tu equipo, no solo scripts predefinidos.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Ofrecen mantenimiento y soporte post-lanzamiento?
+                        <i data-lucide="plus" style="width:20px;height:20px;"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí. Cada proyecto incluye un período de soporte post-lanzamiento. Además, ofrecemos planes de mantenimiento continuo que incluyen actualizaciones, monitoreo, mejoras de rendimiento y soporte prioritario.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Trabajan con clientes fuera de México?
+                        <i data-lucide="plus" style="width:20px;height:20px;"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, tenemos presencia en México y Canadá, y atendemos clientes de cualquier parte del mundo de forma remota. Nuestro equipo trabaja en español e inglés con la misma fluidez.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== NOSOTROS (brief) ======== -->
+    <section id="nosotros" class="section-padding mesh-gradient parallax-section">
+        <div class="container">
+            <div style="text-align:center; max-width:800px; margin:0 auto;" class="reveal">
+                <div class="badge">Sobre PoxelBit</div>
+                <h2 class="section-title">Ingeniería Global,<br><span class="text-gradient">Corazón Familiar</span></h2>
+                <p style="color: var(--gris-acero); font-size:1.1rem; line-height:1.8; margin-bottom:2.5rem;">
+                    Con más de 2 años liderando proyectos en <strong style="color:var(--blanco);">México y Canadá</strong>, PoxelBit combina la precisión técnica de una agencia internacional con la dedicación de una empresa familiar. Nuestro compromiso no es solo entregar código — es garantizar tu transformación digital completa mediante un servicio cercano, transparente y apasionado.
+                </p>
+                <div style="display:flex; justify-content:center; gap:4rem; flex-wrap:wrap;">
+                    <div style="text-align:center;">
+                        <div class="stat-number blue" style="font-size:2.5rem;" data-counter data-target="24" data-suffix="+">0</div>
+                        <div class="stat-label">Meses Innovando</div>
+                    </div>
+                    <div style="text-align:center;">
+                        <div class="stat-number cyan" style="font-size:2.5rem;">100%</div>
+                        <div class="stat-label">Compromiso</div>
+                    </div>
+                    <div style="text-align:center;">
+                        <div class="stat-number violet" style="font-size:2.5rem;">∞</div>
+                        <div class="stat-label">Pasión por la Tecnología</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== CONTACTO ======== -->
+    <section id="contacto" class="section-padding">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info reveal-left">
+                    <div class="badge">Hablemos</div>
+                    <h2 class="section-title" style="text-align:left;">¿Listo para dar el<br><span class="text-gradient">siguiente paso?</span></h2>
+                    <p>Cuéntanos tu idea y descubre cómo podemos transformarla en una solución digital que impacte. Sin compromiso.</p>
+
+                    <ul class="contact-channels">
+                        <li>
+                            <i data-lucide="mail" style="width:20px;height:20px;"></i>
+                            <span>contacto@poxelbit.com</span>
+                        </li>
+                        <li>
+                            <i data-lucide="phone" style="width:20px;height:20px;"></i>
+                            <span>+52 (XXX) XXX-XXXX</span>
+                        </li>
+                        <li>
+                            <i data-lucide="map-pin" style="width:20px;height:20px;"></i>
+                            <span>México & Canadá — Remoto Global</span>
+                        </li>
+                        <li>
+                            <i data-lucide="clock" style="width:20px;height:20px;"></i>
+                            <span>Respuesta en menos de 24 horas</span>
+                        </li>
+                    </ul>
+
+                    <p style="color:var(--gris-acero); font-size:0.9rem; font-style:italic; margin-top:1rem;">
+                        "Calidad PoxelBit: Entregas hasta un 30% más rápidas que la media del mercado."
+                    </p>
+                </div>
+
+                <form class="glass-card contact-form reveal-right" id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" placeholder="Tu nombre completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="tucorreo@empresa.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Servicio de Interés</label>
+                        <select id="service">
+                            <option value="">Selecciona un servicio...</option>
+                            <option value="ia">Inteligencia Artificial</option>
+                            <option value="blockchain">Blockchain & Web3</option>
+                            <option value="web">Desarrollo Web</option>
+                            <option value="agents">Agentes Virtuales de IA</option>
+                            <option value="systems">Sistemas & Software</option>
+                            <option value="landing">Diseño Web & Landing</option>
+                            <option value="other">Otro / Múltiples</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Cuéntanos tu Proyecto</label>
+                        <textarea id="message" rows="5" placeholder="Describe brevemente tu idea, objetivos y plazo deseado..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">
+                        <i data-lucide="send" style="width:18px;height:18px;"></i>
+                        Enviar Mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== FOOTER ======== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#hero" class="nav-logo" style="margin-bottom:0.5rem;">
+                        <div class="logo-icon">
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                        POXEL<span style="color: #06B6D4;">BIT</span>
+                    </a>
+                    <p>Soluciones digitales inteligentes potenciadas por IA, Blockchain y tecnología de vanguardia. México & Canadá.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn">
+                            <i data-lucide="linkedin" style="width:18px;height:18px;"></i>
+                        </a>
+                        <a href="#" aria-label="GitHub">
+                            <i data-lucide="github" style="width:18px;height:18px;"></i>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <i data-lucide="twitter" style="width:18px;height:18px;"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <i data-lucide="instagram" style="width:18px;height:18px;"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#servicios">Inteligencia Artificial</a></li>
+                        <li><a href="#blockchain">Blockchain & Web3</a></li>
+                        <li><a href="#servicios">Desarrollo Web</a></li>
+                        <li><a href="#ia-agents">Agentes Virtuales</a></li>
+                        <li><a href="#servicios">Sistemas & Software</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#nosotros">Sobre Nosotros</a></li>
+                        <li><a href="#portafolio">Portafolio</a></li>
+                        <li><a href="#proceso">Cómo Trabajamos</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="mailto:contacto@poxelbit.com">contacto@poxelbit.com</a></li>
+                        <li><a href="#contacto">Formulario Web</a></li>
+                        <li><a href="#">México & Canadá</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>PoxelBit © 2026 — Todos los derechos reservados.</p>
+                <p>Hecho con 💙 y mucho ☕ desde México</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
