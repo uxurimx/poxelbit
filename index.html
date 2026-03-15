@@ -1,217 +1,349 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PoxelBit | Soluciones Digitales Inteligentes</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <style>
-        :root {
-            --azul-profundo: #0A192F;
-            --azul-cobalto: #0047AB;
-            --gris-acero: #8892B0;
-        }
-        body {
-            background-color: var(--azul-profundo);
-            color: white;
-            font-family: 'Inter', sans-serif;
-            scroll-behavior: smooth;
-        }
-        .glass-card {
-            background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
-        }
-        .glass-card:hover {
-            border-color: #0047AB;
-            transform: translateY(-5px);
-            background: rgba(0, 71, 171, 0.1);
-        }
-        .text-gradient {
-            background: linear-gradient(to right, #60A5FA, #0047AB);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .circuit-bg {
-            background-image: radial-gradient(#1e293b 1px, transparent 1px);
-            background-size: 30px 30px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PoxelBit | Soluciones Digitales con IA</title>
+  <meta name="description" content="Agencia de diseño y programación con IA. Sistemas modulares escalables para emprendedores y PyMEs. 15+ años de experiencia en México, EUA y Canadá.">
+  <meta property="og:title" content="PoxelBit | Soluciones Digitales con IA">
+  <meta property="og:description" content="Diseño, programación y automatización con IA. Sistemas hechos a la medida, listos para crecer.">
+  <script>
+    (function(){
+      var t=localStorage.getItem('pbTheme')||'dark';
+      var l=localStorage.getItem('pbLang')||'es';
+      if(t==='light')document.documentElement.setAttribute('data-theme','light');
+      document.documentElement.lang=l;
+    })();
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="circuit-bg">
+<body>
 
-    <nav class="fixed w-full z-50 glass-card border-none px-6 py-4 flex justify-between items-center">
-        <div class="flex items-center gap-2">
-            <div class="grid grid-cols-2 gap-1 w-8 h-8">
-                <div class="bg-blue-600 rounded-sm"></div>
-                <div class="bg-blue-400 rounded-sm"></div>
-                <div class="bg-gray-400 rounded-sm"></div>
-                <div class="bg-blue-800 rounded-sm"></div>
-            </div>
-            <span class="text-2xl font-bold tracking-tighter">POXEL<span class="text-blue-500">BIT</span></span>
+<!-- ===== NAV ===== -->
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-px"><span></span><span></span><span></span><span></span></div>
+      POXEL<span style="color:var(--blue-b)">BIT</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#servicios" data-i18n="nav.services">Servicios</a></li>
+      <li><a href="yumm.html">YUMM</a></li>
+      <li><a href="#nosotros" data-i18n="nav.about">Nosotros</a></li>
+      <li><a href="#contacto" class="cta" data-i18n="nav.cta">Platiquemos</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button class="ctrl-btn lang-btn" aria-label="Cambiar idioma">ES</button>
+      <button class="ctrl-btn theme-btn" aria-label="Cambiar tema">
+        <i data-lucide="sun" style="width:14px;height:14px;"></i>
+      </button>
+    </div>
+    <button class="hamburger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="nav-mobile">
+  <a href="#servicios" data-i18n="nav.services">Servicios</a>
+  <a href="yumm.html">YUMM</a>
+  <a href="#nosotros" data-i18n="nav.about">Nosotros</a>
+  <a href="#contacto" data-i18n="nav.cta">Platiquemos</a>
+  <div class="nav-mobile-ctrls">
+    <button class="ctrl-btn lang-btn" aria-label="Cambiar idioma">ES</button>
+    <button class="ctrl-btn theme-btn" aria-label="Cambiar tema">
+      <i data-lucide="sun" style="width:14px;height:14px;"></i>
+    </button>
+  </div>
+</div>
+
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-grid"></div>
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <span class="hero-dot"></span>
+      <span data-i18n="index.hero.eyebrow">IA Nativa · Sistemas Modulares</span>
+    </div>
+    <h1 data-i18n-html="index.hero.h1">Digitalizamos tu negocio<br>con <span class="text-gradient">inteligencia</span><br>que trabaja para ti.</h1>
+    <p class="sub" data-i18n="index.hero.sub">Diseño, programación y automatización con IA. Sistemas hechos a la medida para emprendedores y PyMEs — listos para crecer desde el primer día.</p>
+    <div class="hero-ctas">
+      <a href="#contacto" class="btn btn-primary btn-lg">
+        <span data-i18n="index.hero.cta1">Inicia tu proyecto</span>
+        <i data-lucide="arrow-right" style="width:17px;height:17px;"></i>
+      </a>
+      <a href="#servicios" class="btn btn-ghost btn-lg" data-i18n="index.hero.cta2">Ver soluciones</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== STATS STRIP ===== -->
+<div class="stats-strip">
+  <div class="inner">
+    <div class="stat-item reveal">
+      <div class="stat-n">15+</div>
+      <div class="stat-l" data-i18n="index.stats.l1">Años de experiencia</div>
+    </div>
+    <div class="stat-item reveal delay-1">
+      <div class="stat-n">3</div>
+      <div class="stat-l" data-i18n="index.stats.l2">Países con clientes activos</div>
+    </div>
+    <div class="stat-item reveal delay-2">
+      <div class="stat-n">100%</div>
+      <div class="stat-l" data-i18n="index.stats.l3">Arquitectura modular</div>
+    </div>
+    <div class="stat-item reveal delay-3">
+      <div class="stat-n">IA</div>
+      <div class="stat-l" data-i18n="index.stats.l4">Nativa en cada solución</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ===== SERVICES ===== -->
+<section id="servicios">
+  <div class="container">
+    <div class="s-header reveal">
+      <span class="label" data-i18n="index.svc.label">Soluciones</span>
+      <h2 data-i18n-html="index.svc.h2">Todo lo que tu negocio<br>necesita, bajo un mismo techo.</h2>
+      <p data-i18n="index.svc.sub">Cada solución es diseñada desde cero, modular y lista para escalar con tu operación.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc-card reveal">
+        <div class="svc-icon"><i data-lucide="brain-circuit" style="width:22px;height:22px;"></i></div>
+        <h3 data-i18n="index.svc.ia.h3">IA & Agentes</h3>
+        <p data-i18n="index.svc.ia.p">Agentes inteligentes entrenados para tu negocio. Atención al cliente, análisis de datos y automatización de flujos con IA nativa.</p>
+        <a href="servicios/ia-agentes.html" class="svc-arrow">
+          <span data-i18n="index.svc.ia.link">Explorar</span> <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+        </a>
+      </div>
+      <div class="svc-card reveal delay-1">
+        <div class="svc-icon"><i data-lucide="layout" style="width:22px;height:22px;"></i></div>
+        <h3 data-i18n="index.svc.web.h3">Web & Apps</h3>
+        <p data-i18n="index.svc.web.p">Sitios corporativos, landing pages y apps web con diseño profesional. Incluye dominio, hosting y soporte técnico.</p>
+        <a href="servicios/web-apps.html" class="svc-arrow">
+          <span data-i18n="index.svc.web.link">Explorar</span> <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+        </a>
+      </div>
+      <div class="svc-card reveal delay-2">
+        <div class="svc-icon"><i data-lucide="database" style="width:22px;height:22px;"></i></div>
+        <h3 data-i18n="index.svc.saas.h3">SaaS & CRM</h3>
+        <p data-i18n="index.svc.saas.p">Plataformas cloud con actualización en tiempo real. CRM personalizados y sistemas de gestión para tu equipo y tus clientes.</p>
+        <a href="servicios/saas-crm.html" class="svc-arrow">
+          <span data-i18n="index.svc.saas.link">Explorar</span> <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+        </a>
+      </div>
+      <div class="svc-card reveal">
+        <div class="svc-icon"><i data-lucide="cpu" style="width:22px;height:22px;"></i></div>
+        <h3 data-i18n="index.svc.auto.h3">Automatización</h3>
+        <p data-i18n="index.svc.auto.p">Flujos inteligentes que eliminan tareas manuales. Integraciones entre sistemas y notificaciones automáticas potenciadas con IA.</p>
+        <a href="servicios/automatizacion.html" class="svc-arrow">
+          <span data-i18n="index.svc.auto.link">Explorar</span> <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+        </a>
+      </div>
+      <div class="svc-card reveal delay-1">
+        <div class="svc-icon"><i data-lucide="shopping-bag" style="width:22px;height:22px;"></i></div>
+        <h3 data-i18n="index.svc.ecom.h3">E-commerce</h3>
+        <p data-i18n="index.svc.ecom.p">Tiendas digitales con catálogo, pasarela de pagos y gestión de pedidos integrada. Lista para vender desde el primer día.</p>
+        <a href="servicios/ecommerce.html" class="svc-arrow">
+          <span data-i18n="index.svc.ecom.link">Explorar</span> <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+        </a>
+      </div>
+      <div class="svc-card reveal delay-2">
+        <div class="svc-icon"><i data-lucide="layers" style="width:22px;height:22px;"></i></div>
+        <h3 data-i18n="index.svc.cust.h3">Sistemas a la medida</h3>
+        <p data-i18n="index.svc.cust.p">Software empresarial y plataformas de organización construidos específicamente para tu operación, con arquitectura modular desde el origen.</p>
+        <a href="#contacto" class="svc-arrow">
+          <span data-i18n="index.svc.cust.link">Hablemos</span> <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== YUMM HIGHLIGHT ===== -->
+<section class="yumm-s">
+  <div class="container">
+    <div class="yumm-inner">
+      <div class="reveal">
+        <div class="yumm-badge" data-i18n="index.yumm.badge">Producto estrella</div>
+        <h2 data-i18n="index.yumm.h2">YUMM: plataforma de ventas con menú digital y IA</h2>
+        <p class="yumm-lead" data-i18n="index.yumm.lead">Solución cloud en tiempo real para restaurantes, cafeterías y negocios de productos. Sin apps, sin instalaciones — acceso directo desde cualquier dispositivo.</p>
+        <ul class="yumm-feats">
+          <li data-i18n="index.yumm.f1">Menú digital con código QR, actualizable al instante</li>
+          <li data-i18n="index.yumm.f2">Catálogo de productos con imágenes, precios y categorías</li>
+          <li data-i18n="index.yumm.f3">Panel de control y gestión de accesos en tiempo real</li>
+          <li data-i18n="index.yumm.f4">Integración con sistema de ventas y reportes automáticos</li>
+        </ul>
+        <a href="yumm.html" class="btn btn-primary">
+          <span data-i18n="index.yumm.cta">Conocer YUMM</span> <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+        </a>
+      </div>
+      <div class="yumm-visual reveal delay-2">
+        <div class="yumm-glow"></div>
+        <div class="yumm-mockup">
+          <div class="m-header">
+            <div class="m-logo">YUMM</div>
+            <div class="m-status">● En línea</div>
+          </div>
+          <div class="m-grid">
+            <div class="m-item"><div class="m-img"></div><div class="m-name">Producto A</div><div class="m-price">$120.00</div></div>
+            <div class="m-item"><div class="m-img"></div><div class="m-name">Producto B</div><div class="m-price">$85.00</div></div>
+            <div class="m-item"><div class="m-img"></div><div class="m-name">Producto C</div><div class="m-price">$200.00</div></div>
+            <div class="m-item"><div class="m-img"></div><div class="m-name">Producto D</div><div class="m-price">$155.00</div></div>
+          </div>
         </div>
-        <div class="hidden md:flex gap-8 text-sm font-medium">
-            <a href="#hero" class="hover:text-blue-400 transition">Inicio</a>
-            <a href="#soluciones" class="hover:text-blue-400 transition">Soluciones</a>
-            <a href="#ia" class="hover:text-blue-400 transition">PoxelBit IA</a>
-            <a href="#conocenos" class="hover:text-blue-400 transition">Nosotros</a>
-            <a href="#contacto" class="bg-blue-600 px-4 py-2 rounded-full hover:bg-blue-700 transition">Contacto</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== ABOUT ===== -->
+<section id="nosotros">
+  <div class="container">
+    <div class="about-grid">
+      <div class="reveal">
+        <span class="label" data-i18n="index.about.label">Quiénes somos</span>
+        <h2 data-i18n-html="index.about.h2">Ingeniería global,<br>raíces en Culiacán.</h2>
+        <p data-i18n="index.about.p1">PoxelBit nació como empresa familiar en Culiacán, Sinaloa, con un propósito claro: hacer que la tecnología funcione para los negocios de verdad. Hoy tenemos clientes en México, Estados Unidos y Canadá.</p>
+        <p class="ab-p2" data-i18n="index.about.p2">Más de 15 años construyendo sistemas que escalan, automatizando procesos y entregando productos digitales con precisión técnica y trato cercano.</p>
+        <div class="val-grid">
+          <div class="val-card">
+            <i data-lucide="layers" style="width:24px;height:24px;color:var(--blue-b)"></i>
+            <h4 data-i18n="index.about.v1.h4">Modular</h4>
+            <p data-i18n="index.about.v1.p">Tu sistema crece contigo, sin reconstruir desde cero.</p>
+          </div>
+          <div class="val-card">
+            <i data-lucide="zap" style="width:24px;height:24px;color:var(--blue-b)"></i>
+            <h4 data-i18n="index.about.v2.h4">IA Nativa</h4>
+            <p data-i18n="index.about.v2.p">Inteligencia integrada desde el diseño, no como complemento.</p>
+          </div>
+          <div class="val-card">
+            <i data-lucide="shield-check" style="width:24px;height:24px;color:var(--blue-b)"></i>
+            <h4 data-i18n="index.about.v3.h4">Confiable</h4>
+            <p data-i18n="index.about.v3.p">15 años de proyectos entregados con transparencia total.</p>
+          </div>
+          <div class="val-card">
+            <i data-lucide="globe" style="width:24px;height:24px;color:var(--blue-b)"></i>
+            <h4 data-i18n="index.about.v4.h4">Internacional</h4>
+            <p data-i18n="index.about.v4.p">Presencia activa en México, EUA y Canadá.</p>
+          </div>
         </div>
-    </nav>
-
-    <section id="hero" class="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-20">
-        <div class="animate__animated animate__fadeInUp">
-            <h1 class="text-5xl md:text-7xl font-extrabold mb-6">
-                Evolución digital a la <br>
-                <span class="text-gradient">velocidad de tus ideas.</span>
-            </h1>
-            <p class="text-gray-400 max-w-2xl text-lg mb-10">
-                Transformamos la complejidad técnica en ecosistemas inteligentes: desde IA nativa hasta plataformas SaaS que escalan tu visión.
-            </p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="#contacto" class="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:scale-105 transition shadow-lg shadow-blue-900/20">
-                    Inicia tu Proyecto Hoy
-                </a>
-                <a href="#portafolio" class="border border-gray-600 px-8 py-4 rounded-xl font-bold hover:bg-white/5 transition">
-                    Ver Portafolio (YUMM)
-                </a>
-            </div>
+      </div>
+      <div class="reveal delay-2">
+        <div class="about-stat-card">
+          <div class="big-sub" data-i18n="index.about.stat.sub">Años de experiencia</div>
+          <div class="big-num text-gradient">15+</div>
+          <div class="divider"></div>
+          <div class="flag">
+            <i data-lucide="map-pin" style="width:13px;height:13px;color:var(--blue-b)"></i>
+            <span data-i18n="index.about.flag1">Culiacán, Sinaloa — México</span>
+          </div>
+          <div class="flag">
+            <i data-lucide="users" style="width:13px;height:13px;color:var(--blue-b)"></i>
+            <span data-i18n="index.about.flag2">PyMEs y emprendedores</span>
+          </div>
+          <div class="flag">
+            <i data-lucide="trending-up" style="width:13px;height:13px;color:var(--blue-b)"></i>
+            <span data-i18n="index.about.flag3">Expansión EUA y Canadá</span>
+          </div>
+          <div class="divider"></div>
+          <p class="ab-quote" data-i18n="index.about.quote">"Calidad PoxelBit: entregas hasta un 30% más rápidas que el mercado estándar."</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section id="soluciones" class="py-24 px-6 max-w-7xl mx-auto">
-        <h2 class="text-3xl font-bold text-center mb-16">Nuestras Soluciones Digitales</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="glass-card p-8 rounded-3xl text-center">
-                <div class="bg-blue-600/20 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 text-blue-400">
-                    <i data-lucide="layout"></i>
-                </div>
-                <h3 class="font-bold text-xl mb-3">Web & Apps</h3>
-                <p class="text-sm text-gray-400">Sitios de alto rendimiento y apps nativas con UX impecable.</p>
-            </div>
-            <div class="glass-card p-8 rounded-3xl text-center">
-                <div class="bg-blue-600/20 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 text-blue-400">
-                    <i data-lucide="database"></i>
-                </div>
-                <h3 class="font-bold text-xl mb-3">SaaS & CRM</h3>
-                <p class="text-sm text-gray-400">Plataformas en la nube diseñadas para escalar tu operación.</p>
-            </div>
-            <div class="glass-card p-8 rounded-3xl text-center">
-                <div class="bg-blue-600/20 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 text-blue-400">
-                    <i data-lucide="cpu"></i>
-                </div>
-                <h3 class="font-bold text-xl mb-3">Automatización</h3>
-                <p class="text-sm text-gray-400">Flujos inteligentes que ahorran tiempo y reducen errores.</p>
-            </div>
-            <div class="glass-card p-8 rounded-3xl text-center">
-                <div class="bg-blue-600/20 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 text-blue-400">
-                    <i data-lucide="brain-circuit"></i>
-                </div>
-                <h3 class="font-bold text-xl mb-3">IA Personalizada</h3>
-                <p class="text-sm text-gray-400">Agentes inteligentes entrenados para tu negocio específico.</p>
-            </div>
+
+<!-- ===== CONTACT ===== -->
+<section id="contacto" class="contact-s">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="reveal">
+        <span class="label" data-i18n="index.contact.label">Contacto</span>
+        <h2 data-i18n="index.contact.h2">¿Listo para dar el siguiente paso?</h2>
+        <p class="ci-lead" data-i18n="index.contact.lead">Cuéntanos tu proyecto. Te respondemos en menos de 24 horas con una propuesta inicial sin compromiso.</p>
+        <div class="channels">
+          <a href="mailto:contacto@poxelbit.com" class="channel">
+            <div class="ch-icon"><i data-lucide="mail" style="width:17px;height:17px;"></i></div>
+            <span data-i18n="index.contact.ch1">contacto@poxelbit.com</span>
+          </a>
+          <a href="https://wa.me/526691234567" class="channel">
+            <div class="ch-icon"><i data-lucide="message-circle" style="width:17px;height:17px;"></i></div>
+            <span data-i18n="index.contact.ch2">WhatsApp — respuesta inmediata</span>
+          </a>
+          <div class="channel">
+            <div class="ch-icon"><i data-lucide="map-pin" style="width:17px;height:17px;"></i></div>
+            <span data-i18n="index.contact.ch3">Culiacán, Sinaloa · México</span>
+          </div>
         </div>
-    </section>
+      </div>
+      <div class="reveal delay-1">
+        <form class="form contact-form">
+          <div class="fg">
+            <label for="c-name" data-i18n="form.name.label">Nombre</label>
+            <input type="text" id="c-name" name="name" data-i18n-placeholder="form.name.ph" placeholder="Tu nombre completo" required>
+          </div>
+          <div class="fg">
+            <label for="c-email" data-i18n="form.email.label">Correo electrónico</label>
+            <input type="email" id="c-email" name="email" data-i18n-placeholder="form.email.ph" placeholder="tu@correo.com" required>
+          </div>
+          <div class="fg">
+            <label for="c-svc" data-i18n="form.svc.label">Servicio de interés</label>
+            <select id="c-svc" name="servicio">
+              <option value="" data-i18n="form.svc.opt0">Selecciona una opción</option>
+              <option data-i18n="form.svc.opt1">IA & Agentes</option>
+              <option data-i18n="form.svc.opt2">Web & Apps</option>
+              <option data-i18n="form.svc.opt3">SaaS & CRM</option>
+              <option data-i18n="form.svc.opt4">Automatización</option>
+              <option data-i18n="form.svc.opt5">E-commerce</option>
+              <option data-i18n="form.svc.opt6">YUMM</option>
+              <option data-i18n="form.svc.opt7">Sistema a la medida</option>
+            </select>
+          </div>
+          <div class="fg">
+            <label for="c-msg" data-i18n="form.msg.label">Tu proyecto</label>
+            <textarea id="c-msg" name="mensaje" rows="4" data-i18n-placeholder="form.msg.ph" placeholder="Cuéntanos brevemente qué necesitas..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+            <span data-i18n="form.submit">Enviar mensaje</span> <i data-lucide="send" style="width:15px;height:15px;"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section id="ia" class="py-20 bg-blue-900/10">
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-            <div>
-                <span class="text-blue-400 font-mono text-sm tracking-widest uppercase">Tecnología de Vanguardia</span>
-                <h2 class="text-4xl font-bold mt-4 mb-6">Inteligencia Artificial que habla tu idioma.</h2>
-                <p class="text-gray-400 mb-8">
-                    No implementamos IA genérica; desarrollamos Agentes Personalizados y contamos con nuestra propia **IA Nativa**. Diseñada para integrarse en tu flujo de trabajo, no para interrumpirlo.
-                </p>
-                <ul class="space-y-4 mb-8">
-                    <li class="flex items-center gap-3 text-sm text-gray-300">
-                        <i data-lucide="check-circle" class="text-blue-500 w-5 h-5"></i> Procesamiento de Lenguaje Natural Nativo
-                    </li>
-                    <li class="flex items-center gap-3 text-sm text-gray-300">
-                        <i data-lucide="check-circle" class="text-blue-500 w-5 h-5"></i> Automatización de Atención al Cliente
-                    </li>
-                </ul>
-                <button class="bg-white text-blue-900 px-6 py-3 rounded-xl font-bold hover:bg-blue-100 transition">
-                    Prueba nuestra IA Nativa
-                </button>
-            </div>
-            <div class="glass-card p-1 rounded-3xl overflow-hidden shadow-2xl shadow-blue-500/10">
-                <div class="bg-slate-900 p-8 rounded-3xl h-80 flex items-center justify-center relative">
-                    <div class="absolute w-48 h-48 bg-blue-600/20 rounded-full blur-3xl animate-pulse"></div>
-                    <i data-lucide="bot" class="w-32 h-32 text-blue-500 relative z-10"></i>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="conocenos" class="py-24 px-6 max-w-5xl mx-auto text-center">
-        <h2 class="text-3xl font-bold mb-8">Ingeniería Global, Corazón Familiar</h2>
-        <p class="text-gray-400 text-lg leading-relaxed">
-            Con 2 años liderando proyectos en <strong>México y Canadá</strong>, PoxelBit combina la precisión técnica de una agencia internacional con la dedicación de una empresa familiar. Nuestro compromiso no es solo entregar un código; es garantizar tu satisfacción total mediante un servicio cercano y transparente.
-        </p>
-        <div class="flex justify-center gap-12 mt-12 text-blue-400">
-            <div>
-                <p class="text-4xl font-bold">+24</p>
-                <p class="text-xs uppercase tracking-widest text-gray-500">Meses de Innovación</p>
-            </div>
-            <div class="h-12 w-px bg-gray-700"></div>
-            <div>
-                <p class="text-4xl font-bold">100%</p>
-                <p class="text-xs uppercase tracking-widest text-gray-500">Compromiso</p>
-            </div>
-        </div>
-    </section>
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="foot-brand">
+        <div class="logo-px"><span></span><span></span><span></span><span></span></div>
+        POXEL<span style="color:var(--blue-b)">BIT</span>
+      </div>
+      <div class="foot-copy" data-i18n="footer.copy">Culiacán, MX · Soluciones Digitales con IA © 2026</div>
+    </div>
+    <ul class="foot-links">
+      <li><a href="#servicios" data-i18n="nav.services">Servicios</a></li>
+      <li><a href="yumm.html">YUMM</a></li>
+      <li><a href="#nosotros" data-i18n="nav.about">Nosotros</a></li>
+      <li><a href="#contacto" data-i18n="index.contact.label">Contacto</a></li>
+    </ul>
+  </div>
+</footer>
 
-    <section id="portafolio" class="py-20 px-6">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl font-bold mb-12">Casos de Éxito</h2>
-            <div class="glass-card rounded-3xl overflow-hidden grid md:grid-cols-2">
-                <div class="p-12 flex flex-col justify-center">
-                    <span class="text-blue-400 text-sm font-bold uppercase mb-2">Featured Project</span>
-                    <h3 class="text-4xl font-bold mb-4">YUMM: Menú Digital</h3>
-                    <p class="text-gray-400 mb-6">
-                        Redefiniendo la experiencia gastronómica con una plataforma SaaS que prioriza la rapidez y una interfaz intuitiva.
-                    </p>
-                    <div class="flex gap-2 mb-8">
-                        <span class="bg-blue-600/10 text-blue-400 px-3 py-1 rounded-full text-xs">#UXUI</span>
-                        <span class="bg-blue-600/10 text-blue-400 px-3 py-1 rounded-full text-xs">#SaaS</span>
-                        <span class="bg-blue-600/10 text-blue-400 px-3 py-1 rounded-full text-xs">#Gastrotech</span>
-                    </div>
-                </div>
-                <div class="bg-gradient-to-br from-blue-600 to-indigo-900 min-h-[300px] flex items-center justify-center p-8">
-                    <div class="w-full max-w-xs h-64 bg-slate-900 rounded-2xl shadow-2xl border-4 border-slate-800 flex flex-col p-4 overflow-hidden">
-                        <div class="w-full h-8 bg-blue-500/20 rounded-lg mb-4"></div>
-                        <div class="flex gap-2 mb-4">
-                            <div class="w-1/2 h-20 bg-gray-800 rounded-lg"></div>
-                            <div class="w-1/2 h-20 bg-gray-800 rounded-lg"></div>
-                        </div>
-                        <div class="w-full h-24 bg-gray-800 rounded-lg"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contacto" class="py-24 px-6 bg-blue-600 text-white text-center">
-        <div class="max-w-2xl mx-auto">
-            <h2 class="text-4xl font-bold mb-6">¿Listo para dar el siguiente paso?</h2>
-            <p class="mb-10 text-blue-100">Cuéntanos tu proyecto y descubre por qué somos la solución digital preferida en México y Canadá.</p>
-            <form class="space-y-4">
-                <input type="email" placeholder="Tu correo electrónico" class="w-full p-4 rounded-xl bg-white/10 border border-white/20 placeholder-blue-100 focus:outline-none focus:bg-white/20 transition">
-                <button class="w-full bg-white text-blue-600 py-4 rounded-xl font-bold hover:shadow-xl transition shadow-lg">Enviar Mensaje</button>
-            </form>
-            <p class="mt-8 text-sm opacity-70 italic font-medium">"Calidad PoxelBit: Entregas hasta un 30% más rápidas."</p>
-        </div>
-    </section>
-
-    <footer class="py-8 text-center text-gray-500 text-sm border-t border-gray-800">
-        <p>PoxelBit © 2026 | Soluciones digitales para todos.</p>
-    </footer>
-
-    <script>
-        // Inicializar iconos
-        lucide.createIcons();
-    </script>
+<script src="i18n.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

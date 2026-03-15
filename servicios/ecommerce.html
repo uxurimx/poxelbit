@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce — PoxelBit</title>
+  <meta name="description" content="Tiendas digitales con catálogo de productos, pasarela de pagos y gestión de pedidos. Lista para vender desde el día uno. PoxelBit — Culiacán, MX.">
+  <script>
+    (function(){
+      var t=localStorage.getItem('pbTheme')||'dark';
+      var l=localStorage.getItem('pbLang')||'es';
+      if(t==='light')document.documentElement.setAttribute('data-theme','light');
+      document.documentElement.lang=l;
+    })();
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<nav class="scrolled">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">
+      <div class="logo-px"><span></span><span></span><span></span><span></span></div>
+      POXEL<span style="color:var(--blue-b)">BIT</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html#servicios" data-i18n="nav.services">Servicios</a></li>
+      <li><a href="../yumm.html">YUMM</a></li>
+      <li><a href="../index.html#nosotros" data-i18n="nav.about">Nosotros</a></li>
+      <li><a href="../index.html#contacto" class="cta" data-i18n="nav.cta">Platiquemos</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button class="ctrl-btn lang-btn" aria-label="Cambiar idioma">ES</button>
+      <button class="ctrl-btn theme-btn" aria-label="Cambiar tema">
+        <i data-lucide="sun" style="width:14px;height:14px;"></i>
+      </button>
+    </div>
+    <button class="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-mobile">
+  <a href="../index.html#servicios" data-i18n="nav.services">Servicios</a>
+  <a href="../yumm.html">YUMM</a>
+  <a href="../index.html#nosotros" data-i18n="nav.about">Nosotros</a>
+  <a href="../index.html#contacto" data-i18n="nav.cta">Platiquemos</a>
+  <div class="nav-mobile-ctrls">
+    <button class="ctrl-btn lang-btn" aria-label="Cambiar idioma">ES</button>
+    <button class="ctrl-btn theme-btn" aria-label="Cambiar tema">
+      <i data-lucide="sun" style="width:14px;height:14px;"></i>
+    </button>
+  </div>
+</div>
+
+
+<!-- HERO -->
+<div class="pg-hero">
+  <div class="pg-hero-bg"></div>
+  <div class="pg-hero-grid"></div>
+  <div class="container">
+    <a href="../index.html" class="back-link">
+      <i data-lucide="arrow-left" style="width:14px;height:14px;"></i> <span data-i18n="nav.back">Regresar</span>
+    </a>
+    <span class="label" data-i18n="ecom.label">E-commerce</span>
+    <h1 data-i18n-html="ecom.h1">Tu tienda digital,<br><span class="text-gradient">lista para vender desde el día uno.</span></h1>
+    <p class="pg-lead" data-i18n="ecom.lead">Construimos tiendas en línea completas: catálogo de productos, carrito de compras, pagos seguros y gestión de pedidos — todo integrado y listo para operar.</p>
+    <a href="../index.html#contacto" class="btn btn-primary btn-lg">
+      <span data-i18n="ecom.cta">Crear mi tienda</span> <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+    </a>
+  </div>
+</div>
+
+
+<!-- FEATURES -->
+<section>
+  <div class="container">
+    <div class="s-header center reveal">
+      <span class="label" data-i18n="ecom.feat.label">Qué incluye</span>
+      <h2 data-i18n-html="ecom.feat.h2">Todo lo que necesitas<br>para vender en línea.</h2>
+      <p data-i18n="ecom.feat.sub">Una tienda completa, sin cuentas de terceros obligatorias ni comisiones ocultas por venta.</p>
+    </div>
+    <div class="feat-grid">
+      <div class="feat-card reveal">
+        <div class="feat-icon"><i data-lucide="package" style="width:20px;height:20px;"></i></div>
+        <h3 data-i18n="ecom.f1.h3">Catálogo de productos</h3>
+        <p data-i18n="ecom.f1.p">Organización por categorías, variantes (talla, color, etc.), galería de imágenes y descripciones ricas.</p>
+      </div>
+      <div class="feat-card reveal delay-1">
+        <div class="feat-icon"><i data-lucide="credit-card" style="width:20px;height:20px;"></i></div>
+        <h3 data-i18n="ecom.f2.h3">Pasarela de pagos</h3>
+        <p data-i18n="ecom.f2.p">Integración con Stripe, Mercado Pago, PayPal u otras opciones. Pagos seguros con confirmación automática.</p>
+      </div>
+      <div class="feat-card reveal delay-2">
+        <div class="feat-icon"><i data-lucide="truck" style="width:20px;height:20px;"></i></div>
+        <h3 data-i18n="ecom.f3.h3">Gestión de pedidos</h3>
+        <p data-i18n="ecom.f3.p">Panel de control para ver, procesar y dar seguimiento a pedidos en tiempo real. Notificaciones automáticas al cliente.</p>
+      </div>
+      <div class="feat-card reveal">
+        <div class="feat-icon"><i data-lucide="box" style="width:20px;height:20px;"></i></div>
+        <h3 data-i18n="ecom.f4.h3">Control de inventario</h3>
+        <p data-i18n="ecom.f4.p">Stock actualizable manualmente o integrado con tu sistema. Alertas automáticas cuando un producto se agota.</p>
+      </div>
+      <div class="feat-card reveal delay-1">
+        <div class="feat-icon"><i data-lucide="brain-circuit" style="width:20px;height:20px;"></i></div>
+        <h3 data-i18n="ecom.f5.h3">IA para ventas</h3>
+        <p data-i18n="ecom.f5.p">Recomendaciones de productos, búsqueda inteligente y asistente de compra para aumentar el ticket promedio.</p>
+      </div>
+      <div class="feat-card reveal delay-2">
+        <div class="feat-icon"><i data-lucide="bar-chart-2" style="width:20px;height:20px;"></i></div>
+        <h3 data-i18n="ecom.f6.h3">Analíticas de ventas</h3>
+        <p data-i18n="ecom.f6.p">Reportes de productos más vendidos, ingresos, abandonos de carrito y comportamiento de tus compradores.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- PROCESS -->
+<section class="process-s">
+  <div class="container">
+    <div class="s-header center reveal">
+      <span class="label">Proceso</span>
+      <h2 data-i18n="ecom.proc.h2">De cero a ventas en 4 etapas</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-n">01</div>
+        <h4 data-i18n="ecom.s1.h4">Catálogo</h4>
+        <p data-i18n="ecom.s1.p">Organizamos tus productos, categorías y variantes con tu equipo.</p>
+      </div>
+      <div class="step reveal delay-1">
+        <div class="step-n">02</div>
+        <h4 data-i18n="ecom.s2.h4">Diseño</h4>
+        <p data-i18n="ecom.s2.p">Experiencia de compra diseñada para convertir visitantes en clientes.</p>
+      </div>
+      <div class="step reveal delay-2">
+        <div class="step-n">03</div>
+        <h4 data-i18n="ecom.s3.h4">Pagos</h4>
+        <p data-i18n="ecom.s3.p">Integración y pruebas de la pasarela de pagos y flujo de checkout.</p>
+      </div>
+      <div class="step reveal delay-3">
+        <div class="step-n">04</div>
+        <h4 data-i18n="ecom.s4.h4">Lanzamiento</h4>
+        <p data-i18n="ecom.s4.p">Publicación, revisión final y capacitación para administrar tu tienda.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CTA -->
+<div class="cta-band">
+  <div class="container">
+    <span class="label" data-i18n="ecom.band.label">¿Empezamos?</span>
+    <h2 data-i18n="ecom.band.h2">Tu tienda en línea, construida para vender</h2>
+    <p data-i18n="ecom.band.p">Con 15 años de experiencia en proyectos digitales, sabemos qué funciona para que tu cliente compre.</p>
+    <div class="cta-btns">
+      <a href="../index.html#contacto" class="btn btn-primary btn-lg">
+        <span data-i18n="ecom.band.btn1">Cotizar mi tienda</span> <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+      </a>
+      <a href="../index.html#servicios" class="btn btn-ghost btn-lg" data-i18n="cta.more">Ver más servicios</a>
+    </div>
+  </div>
+</div>
+
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="foot-brand">
+        <div class="logo-px"><span></span><span></span><span></span><span></span></div>
+        POXEL<span style="color:var(--blue-b)">BIT</span>
+      </div>
+      <div class="foot-copy" data-i18n="footer.copy">Culiacán, MX · Soluciones Digitales con IA © 2026</div>
+    </div>
+    <ul class="foot-links">
+      <li><a href="../index.html#servicios" data-i18n="nav.services">Servicios</a></li>
+      <li><a href="../yumm.html">YUMM</a></li>
+      <li><a href="../index.html#nosotros" data-i18n="nav.about">Nosotros</a></li>
+      <li><a href="../index.html#contacto" data-i18n="index.contact.label">Contacto</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="../i18n.js"></script>
+<script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaaS & CRM — PoxelBit</title>
+  <meta name="description" content="Plataformas cloud personalizadas con actualización en tiempo real. CRM a la medida, dashboards y sistemas de gestión para tu equipo y clientes.">
+  <script>
+    (function(){
+      var t=localStorage.getItem('pbTheme')||'dark';
+      var l=localStorage.getItem('pbLang')||'es';
+      if(t==='light')document.documentElement.setAttribute('data-theme','light');
+      document.documentElement.lang=l;
+    })();
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<nav class="scrolled">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">
+      <div class="logo-px"><span></span><span></span><span></span><span></span></div>
+      POXEL<span style="color:var(--blue-b)">BIT</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html#servicios" data-i18n="nav.services">Servicios</a></li>
+      <li><a href="../yumm.html">YUMM</a></li>
+      <li><a href="../index.html#nosotros" data-i18n="nav.about">Nosotros</a></li>
+      <li><a href="../index.html#contacto" class="cta" data-i18n="nav.cta">Platiquemos</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button class="ctrl-btn lang-btn" aria-label="Cambiar idioma">ES</button>
+      <button class="ctrl-btn theme-btn" aria-label="Cambiar tema">
+        <i data-lucide="sun" style="width:14px;height:14px;"></i>
+      </button>
+    </div>
+    <button class="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-mobile">
+  <a href="../index.html#servicios" data-i18n="nav.services">Servicios</a>
+  <a href="../yumm.html">YUMM</a>
+  <a href="../index.html#nosotros" data-i18n="nav.about">Nosotros</a>
+  <a href="../index.html#contacto" data-i18n="nav.cta">Platiquemos</a>
+  <div class="nav-mobile-ctrls">
+    <button class="ctrl-btn lang-btn" aria-label="Cambiar idioma">ES</button>
+    <button class="ctrl-btn theme-btn" aria-label="Cambiar tema">
+      <i data-lucide="sun" style="width:14px;height:14px;"></i>
+    </button>
+  </div>
+</div>
+
+
+<!-- HERO -->
+<div class="pg-hero">
+  <div class="pg-hero-bg"></div>
+  <div class="pg-hero-grid"></div>
+  <div class="container">
+    <a href="../index.html" class="back-link">
+      <i data-lucide="arrow-left" style="width:14px;height:14px;"></i> <span data-i18n="nav.back">Regresar</span>
+    </a>
+    <span class="label" data-i18n="saas.label">SaaS & CRM</span>
+    <h1 data-i18n-html="saas.h1">Plataformas cloud que<br><span class="text-gradient">escalan con tu operación.</span></h1>
+    <p class="pg-lead" data-i18n="saas.lead">Construimos sistemas en la nube a la medida: desde un CRM que centraliza tus clientes hasta plataformas SaaS completas con múltiples usuarios y actualización en tiempo real.</p>
+    <a href="../index.html#contacto" class="btn btn-primary btn-lg">
+      <span data-i18n="saas.cta">Diseñar mi plataforma</span> <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+    </a>
+  </div>
+</div>
+
+
+<!-- FEATURES -->
+<section>
+  <div class="container">
+    <div class="s-header center reveal">
+      <span class="label" data-i18n="saas.feat.label">Qué incluye</span>
+      <h2 data-i18n-html="saas.feat.h2">Más que un software —<br>una plataforma que opera por ti.</h2>
+      <p data-i18n="saas.feat.sub">Diseñamos cada módulo con arquitectura modular para que puedas agregar funciones sin reconstruir desde cero.</p>
+    </div>
+    <div class="feat-grid">
+      <div class="feat-card reveal">
+        <div class="feat-icon"><i data-lucide="users" style="width:20px;height:20px;"></i></div>
+        <h3 data-i18n="saas.f1.h3">CRM personalizado</h3>
+        <p data-i18n="saas.f1.p">Gestión de clientes, pipeline de ventas, historial de interacciones y recordatorios automáticos adaptados a tu flujo.</p>
+      </div>
+      <div class="feat-card reveal delay-1">
+        <div class="feat-icon"><i data-lucide="activity" style="width:20px;height:20px;"></i></div>
+        <h3 data-i18n="saas.f2.h3">Tiempo real</h3>
+        <p data-i18n="saas.f2.p">Actualizaciones instantáneas en toda la plataforma. Tu equipo ve los mismos datos en el mismo momento, sin refrescar.</p>
+      </div>
+      <div class="feat-card reveal delay-2">
+        <div class="feat-icon"><i data-lucide="bar-chart-2" style="width:20px;height:20px;"></i></div>
+        <h3 data-i18n="saas.f3.h3">Dashboards e informes</h3>
+        <p data-i18n="saas.f3.p">Visualizaciones claras de tus KPIs, ventas, inventario o cualquier métrica que necesites monitorear.</p>
+      </div>
+      <div class="feat-card reveal">
+        <div class="feat-icon"><i data-lucide="shield-check" style="width:20px;height:20px;"></i></div>
+        <h3 data-i18n="saas.f4.h3">Control de accesos</h3>
+        <p data-i18n="saas.f4.p">Roles y permisos granulares: cada usuario ve exactamente lo que debe ver, nada más.</p>
+      </div>
+      <div class="feat-card reveal delay-1">
+        <div class="feat-icon"><i data-lucide="bell" style="width:20px;height:20px;"></i></div>
+        <h3 data-i18n="saas.f5.h3">Notificaciones inteligentes</h3>
+        <p data-i18n="saas.f5.p">Alertas automáticas por correo, WhatsApp o dentro de la plataforma para que nada se te escape.</p>
+      </div>
+      <div class="feat-card reveal delay-2">
+        <div class="feat-icon"><i data-lucide="layers" style="width:20px;height:20px;"></i></div>
+        <h3 data-i18n="saas.f6.h3">Arquitectura modular</h3>
+        <p data-i18n="saas.f6.p">Empieza con lo que necesitas hoy. Agrega módulos cuando tu operación crezca — sin migrar a otra plataforma.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- PROCESS -->
+<section class="process-s">
+  <div class="container">
+    <div class="s-header center reveal">
+      <span class="label">Proceso</span>
+      <h2 data-i18n="saas.proc.h2">De la idea a la plataforma funcional</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-n">01</div>
+        <h4 data-i18n="saas.s1.h4">Análisis</h4>
+        <p data-i18n="saas.s1.p">Mapeamos tus procesos, usuarios y flujos de información actuales.</p>
+      </div>
+      <div class="step reveal delay-1">
+        <div class="step-n">02</div>
+        <h4 data-i18n="saas.s2.h4">Arquitectura</h4>
+        <p data-i18n="saas.s2.p">Diseñamos la estructura de datos, módulos y API de tu plataforma.</p>
+      </div>
+      <div class="step reveal delay-2">
+        <div class="step-n">03</div>
+        <h4 data-i18n="saas.s3.h4">Desarrollo</h4>
+        <p data-i18n="saas.s3.p">Construcción iterativa con entregas parciales para validar en cada etapa.</p>
+      </div>
+      <div class="step reveal delay-3">
+        <div class="step-n">04</div>
+        <h4 data-i18n="saas.s4.h4">Despliegue</h4>
+        <p data-i18n="saas.s4.p">Lanzamiento en la nube con capacitación, soporte y plan de crecimiento.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CTA -->
+<div class="cta-band">
+  <div class="container">
+    <span class="label" data-i18n="saas.band.label">Ejemplo real</span>
+    <h2 data-i18n="saas.band.h2">YUMM — nuestra plataforma SaaS en producción</h2>
+    <p data-i18n="saas.band.p">Es la prueba de que construimos lo que prometemos. Plataforma cloud en tiempo real para negocios gastronómicos, activa con clientes reales.</p>
+    <div class="cta-btns">
+      <a href="../yumm.html" class="btn btn-primary btn-lg">
+        <span data-i18n="saas.band.btn1">Ver YUMM</span> <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+      </a>
+      <a href="../index.html#contacto" class="btn btn-ghost btn-lg" data-i18n="saas.band.btn2">Cotizar mi plataforma</a>
+    </div>
+  </div>
+</div>
+
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="foot-brand">
+        <div class="logo-px"><span></span><span></span><span></span><span></span></div>
+        POXEL<span style="color:var(--blue-b)">BIT</span>
+      </div>
+      <div class="foot-copy" data-i18n="footer.copy">Culiacán, MX · Soluciones Digitales con IA © 2026</div>
+    </div>
+    <ul class="foot-links">
+      <li><a href="../index.html#servicios" data-i18n="nav.services">Servicios</a></li>
+      <li><a href="../yumm.html">YUMM</a></li>
+      <li><a href="../index.html#nosotros" data-i18n="nav.about">Nosotros</a></li>
+      <li><a href="../index.html#contacto" data-i18n="index.contact.label">Contacto</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="../i18n.js"></script>
+<script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web & Apps — PoxelBit</title>
+  <meta name="description" content="Sitios web corporativos, landing pages y apps web con diseño profesional. Dominio, hosting y soporte incluidos. PoxelBit — Culiacán, MX.">
+  <script>
+    (function(){
+      var t=localStorage.getItem('pbTheme')||'dark';
+      var l=localStorage.getItem('pbLang')||'es';
+      if(t==='light')document.documentElement.setAttribute('data-theme','light');
+      document.documentElement.lang=l;
+    })();
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<nav class="scrolled">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">
+      <div class="logo-px"><span></span><span></span><span></span><span></span></div>
+      POXEL<span style="color:var(--blue-b)">BIT</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html#servicios" data-i18n="nav.services">Servicios</a></li>
+      <li><a href="../yumm.html">YUMM</a></li>
+      <li><a href="../index.html#nosotros" data-i18n="nav.about">Nosotros</a></li>
+      <li><a href="../index.html#contacto" class="cta" data-i18n="nav.cta">Platiquemos</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button class="ctrl-btn lang-btn" aria-label="Cambiar idioma">ES</button>
+      <button class="ctrl-btn theme-btn" aria-label="Cambiar tema">
+        <i data-lucide="sun" style="width:14px;height:14px;"></i>
+      </button>
+    </div>
+    <button class="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-mobile">
+  <a href="../index.html#servicios" data-i18n="nav.services">Servicios</a>
+  <a href="../yumm.html">YUMM</a>
+  <a href="../index.html#nosotros" data-i18n="nav.about">Nosotros</a>
+  <a href="../index.html#contacto" data-i18n="nav.cta">Platiquemos</a>
+  <div class="nav-mobile-ctrls">
+    <button class="ctrl-btn lang-btn" aria-label="Cambiar idioma">ES</button>
+    <button class="ctrl-btn theme-btn" aria-label="Cambiar tema">
+      <i data-lucide="sun" style="width:14px;height:14px;"></i>
+    </button>
+  </div>
+</div>
+
+
+<!-- HERO -->
+<div class="pg-hero">
+  <div class="pg-hero-bg"></div>
+  <div class="pg-hero-grid"></div>
+  <div class="container">
+    <a href="../index.html" class="back-link">
+      <i data-lucide="arrow-left" style="width:14px;height:14px;"></i> <span data-i18n="nav.back">Regresar</span>
+    </a>
+    <span class="label" data-i18n="web.label">Web & Apps</span>
+    <h1 data-i18n-html="web.h1">Tu presencia digital,<br><span class="text-gradient">diseñada para convertir.</span></h1>
+    <p class="pg-lead" data-i18n="web.lead">Construimos sitios web y aplicaciones que no solo se ven bien — están diseñadas para generar confianza, atraer clientes y crecer con tu negocio.</p>
+    <a href="../index.html#contacto" class="btn btn-primary btn-lg">
+      <span data-i18n="web.cta">Cotizar proyecto</span> <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+    </a>
+  </div>
+</div>
+
+
+<!-- FEATURES -->
+<section>
+  <div class="container">
+    <div class="s-header center reveal">
+      <span class="label" data-i18n="web.feat.label">Qué construimos</span>
+      <h2 data-i18n-html="web.feat.h2">Cada tipo de presencia digital,<br>hecha a la medida.</h2>
+      <p data-i18n="web.feat.sub">Desde una landing page que convierte hasta una app web compleja — todo con el mismo nivel de cuidado.</p>
+    </div>
+    <div class="feat-grid">
+      <div class="feat-card reveal">
+        <div class="feat-icon"><i data-lucide="monitor" style="width:20px;height:20px;"></i></div>
+        <h3 data-i18n="web.f1.h3">Sitio corporativo</h3>
+        <p data-i18n="web.f1.p">Tu marca en línea con diseño profesional, SEO básico y velocidad optimizada desde el primer día.</p>
+      </div>
+      <div class="feat-card reveal delay-1">
+        <div class="feat-icon"><i data-lucide="target" style="width:20px;height:20px;"></i></div>
+        <h3 data-i18n="web.f2.h3">Landing pages</h3>
+        <p data-i18n="web.f2.p">Páginas de conversión diseñadas para captar leads, vender productos o presentar servicios con claridad.</p>
+      </div>
+      <div class="feat-card reveal delay-2">
+        <div class="feat-icon"><i data-lucide="app-window" style="width:20px;height:20px;"></i></div>
+        <h3 data-i18n="web.f3.h3">Aplicaciones web</h3>
+        <p data-i18n="web.f3.p">Plataformas interactivas con autenticación, paneles de usuario y lógica de negocio compleja.</p>
+      </div>
+      <div class="feat-card reveal">
+        <div class="feat-icon"><i data-lucide="smartphone" style="width:20px;height:20px;"></i></div>
+        <h3 data-i18n="web.f4.h3">Diseño responsive</h3>
+        <p data-i18n="web.f4.p">Experiencia impecable en móvil, tablet y escritorio. El 70% de tu tráfico viene de celular.</p>
+      </div>
+      <div class="feat-card reveal delay-1">
+        <div class="feat-icon"><i data-lucide="globe" style="width:20px;height:20px;"></i></div>
+        <h3 data-i18n="web.f5.h3">Dominio y hosting</h3>
+        <p data-i18n="web.f5.p">Incluimos configuración de dominio, hosting de alto rendimiento y certificado SSL. Sin complicaciones técnicas.</p>
+      </div>
+      <div class="feat-card reveal delay-2">
+        <div class="feat-icon"><i data-lucide="brain-circuit" style="width:20px;height:20px;"></i></div>
+        <h3 data-i18n="web.f6.h3">IA integrada</h3>
+        <p data-i18n="web.f6.p">Chat inteligente, búsqueda semántica o recomendaciones personalizadas — IA nativa desde el diseño.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- PROCESS -->
+<section class="process-s">
+  <div class="container">
+    <div class="s-header center reveal">
+      <span class="label">Proceso</span>
+      <h2 data-i18n="web.proc.h2">Del concepto al lanzamiento</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-n">01</div>
+        <h4 data-i18n="web.s1.h4">Brief</h4>
+        <p data-i18n="web.s1.p">Entendemos tu negocio, objetivos y audiencia objetivo.</p>
+      </div>
+      <div class="step reveal delay-1">
+        <div class="step-n">02</div>
+        <h4 data-i18n="web.s2.h4">Diseño</h4>
+        <p data-i18n="web.s2.p">Prototipo visual con tu identidad de marca y UX pensado para conversión.</p>
+      </div>
+      <div class="step reveal delay-2">
+        <div class="step-n">03</div>
+        <h4 data-i18n="web.s3.h4">Desarrollo</h4>
+        <p data-i18n="web.s3.p">Código limpio, modular y optimizado para velocidad y seguridad.</p>
+      </div>
+      <div class="step reveal delay-3">
+        <div class="step-n">04</div>
+        <h4 data-i18n="web.s4.h4">Lanzamiento</h4>
+        <p data-i18n="web.s4.p">Publicación, pruebas finales y capacitación para que administres tu sitio.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CTA -->
+<div class="cta-band">
+  <div class="container">
+    <span class="label" data-i18n="web.band.label">¿Empezamos?</span>
+    <h2 data-i18n="web.band.h2">Tu sitio web en menos tiempo del que imaginas</h2>
+    <p data-i18n="web.band.p">Con 15+ años de experiencia, sabemos cómo entregar proyectos de calidad sin demoras.</p>
+    <div class="cta-btns">
+      <a href="../index.html#contacto" class="btn btn-primary btn-lg">
+        <span data-i18n="web.band.btn1">Solicitar cotización</span> <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+      </a>
+      <a href="../index.html#servicios" class="btn btn-ghost btn-lg" data-i18n="cta.more">Ver más servicios</a>
+    </div>
+  </div>
+</div>
+
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="foot-brand">
+        <div class="logo-px"><span></span><span></span><span></span><span></span></div>
+        POXEL<span style="color:var(--blue-b)">BIT</span>
+      </div>
+      <div class="foot-copy" data-i18n="footer.copy">Culiacán, MX · Soluciones Digitales con IA © 2026</div>
+    </div>
+    <ul class="foot-links">
+      <li><a href="../index.html#servicios" data-i18n="nav.services">Servicios</a></li>
+      <li><a href="../yumm.html">YUMM</a></li>
+      <li><a href="../index.html#nosotros" data-i18n="nav.about">Nosotros</a></li>
+      <li><a href="../index.html#contacto" data-i18n="index.contact.label">Contacto</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="../i18n.js"></script>
+<script src="../script.js"></script>
+</body>
+</html>

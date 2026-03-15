@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automatización de Procesos — PoxelBit</title>
+  <meta name="description" content="Automatiza flujos de trabajo con IA. Integraciones entre sistemas, notificaciones automáticas y procesos sin intervención humana. PoxelBit — Culiacán, MX.">
+  <script>
+    (function(){
+      var t=localStorage.getItem('pbTheme')||'dark';
+      var l=localStorage.getItem('pbLang')||'es';
+      if(t==='light')document.documentElement.setAttribute('data-theme','light');
+      document.documentElement.lang=l;
+    })();
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<nav class="scrolled">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">
+      <div class="logo-px"><span></span><span></span><span></span><span></span></div>
+      POXEL<span style="color:var(--blue-b)">BIT</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html#servicios" data-i18n="nav.services">Servicios</a></li>
+      <li><a href="../yumm.html">YUMM</a></li>
+      <li><a href="../index.html#nosotros" data-i18n="nav.about">Nosotros</a></li>
+      <li><a href="../index.html#contacto" class="cta" data-i18n="nav.cta">Platiquemos</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button class="ctrl-btn lang-btn" aria-label="Cambiar idioma">ES</button>
+      <button class="ctrl-btn theme-btn" aria-label="Cambiar tema">
+        <i data-lucide="sun" style="width:14px;height:14px;"></i>
+      </button>
+    </div>
+    <button class="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-mobile">
+  <a href="../index.html#servicios" data-i18n="nav.services">Servicios</a>
+  <a href="../yumm.html">YUMM</a>
+  <a href="../index.html#nosotros" data-i18n="nav.about">Nosotros</a>
+  <a href="../index.html#contacto" data-i18n="nav.cta">Platiquemos</a>
+  <div class="nav-mobile-ctrls">
+    <button class="ctrl-btn lang-btn" aria-label="Cambiar idioma">ES</button>
+    <button class="ctrl-btn theme-btn" aria-label="Cambiar tema">
+      <i data-lucide="sun" style="width:14px;height:14px;"></i>
+    </button>
+  </div>
+</div>
+
+
+<!-- HERO -->
+<div class="pg-hero">
+  <div class="pg-hero-bg"></div>
+  <div class="pg-hero-grid"></div>
+  <div class="container">
+    <a href="../index.html" class="back-link">
+      <i data-lucide="arrow-left" style="width:14px;height:14px;"></i> <span data-i18n="nav.back">Regresar</span>
+    </a>
+    <span class="label" data-i18n="auto.label">Automatización con IA</span>
+    <h1 data-i18n-html="auto.h1">Automatiza lo repetitivo,<br><span class="text-gradient">enfócate en crecer.</span></h1>
+    <p class="pg-lead" data-i18n="auto.lead">Identificamos los procesos manuales de tu operación y los convertimos en flujos automáticos inteligentes — con IA que aprende y mejora con el tiempo.</p>
+    <a href="../index.html#contacto" class="btn btn-primary btn-lg">
+      <span data-i18n="auto.cta">Automatizar mi operación</span> <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+    </a>
+  </div>
+</div>
+
+
+<!-- FEATURES -->
+<section>
+  <div class="container">
+    <div class="s-header center reveal">
+      <span class="label" data-i18n="auto.feat.label">Qué automatizamos</span>
+      <h2 data-i18n-html="auto.feat.h2">Si se puede repetir,<br>lo podemos automatizar.</h2>
+      <p data-i18n="auto.feat.sub">Cada proceso manual que eliminas es tiempo y dinero que recuperas para hacer crecer tu negocio.</p>
+    </div>
+    <div class="feat-grid">
+      <div class="feat-card reveal">
+        <div class="feat-icon"><i data-lucide="mail" style="width:20px;height:20px;"></i></div>
+        <h3 data-i18n="auto.f1.h3">Comunicaciones</h3>
+        <p data-i18n="auto.f1.p">Correos de bienvenida, seguimientos, facturas, recordatorios y notificaciones — enviados automáticamente en el momento exacto.</p>
+      </div>
+      <div class="feat-card reveal delay-1">
+        <div class="feat-icon"><i data-lucide="file-text" style="width:20px;height:20px;"></i></div>
+        <h3 data-i18n="auto.f2.h3">Procesamiento de documentos</h3>
+        <p data-i18n="auto.f2.p">Lectura, clasificación y extracción de datos de facturas, formularios o contratos con IA de visión.</p>
+      </div>
+      <div class="feat-card reveal delay-2">
+        <div class="feat-icon"><i data-lucide="link-2" style="width:20px;height:20px;"></i></div>
+        <h3 data-i18n="auto.f3.h3">Integraciones entre sistemas</h3>
+        <p data-i18n="auto.f3.p">Conectamos tu CRM, e-commerce, contabilidad y logística para que los datos fluyan sin intervención humana.</p>
+      </div>
+      <div class="feat-card reveal">
+        <div class="feat-icon"><i data-lucide="box" style="width:20px;height:20px;"></i></div>
+        <h3 data-i18n="auto.f4.h3">Gestión de inventario</h3>
+        <p data-i18n="auto.f4.p">Alertas de stock bajo, órdenes de compra automáticas y sincronización de inventarios entre canales de venta.</p>
+      </div>
+      <div class="feat-card reveal delay-1">
+        <div class="feat-icon"><i data-lucide="bar-chart" style="width:20px;height:20px;"></i></div>
+        <h3 data-i18n="auto.f5.h3">Reportes automáticos</h3>
+        <p data-i18n="auto.f5.p">Informes de ventas, operaciones o finanzas generados y enviados automáticamente cada día, semana o mes.</p>
+      </div>
+      <div class="feat-card reveal delay-2">
+        <div class="feat-icon"><i data-lucide="brain-circuit" style="width:20px;height:20px;"></i></div>
+        <h3 data-i18n="auto.f6.h3">Flujos con IA</h3>
+        <p data-i18n="auto.f6.p">El sistema no solo ejecuta reglas — toma decisiones inteligentes basadas en patrones y contexto en tiempo real.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- PROCESS -->
+<section class="process-s">
+  <div class="container">
+    <div class="s-header center reveal">
+      <span class="label">Proceso</span>
+      <h2 data-i18n="auto.proc.h2">Del proceso manual al flujo automático</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-n">01</div>
+        <h4 data-i18n="auto.s1.h4">Mapeo</h4>
+        <p data-i18n="auto.s1.p">Documentamos cada paso de tu proceso actual e identificamos los cuellos de botella.</p>
+      </div>
+      <div class="step reveal delay-1">
+        <div class="step-n">02</div>
+        <h4 data-i18n="auto.s2.h4">Diseño</h4>
+        <p data-i18n="auto.s2.p">Arquitecturamos el flujo automático con las reglas y excepciones de tu negocio.</p>
+      </div>
+      <div class="step reveal delay-2">
+        <div class="step-n">03</div>
+        <h4 data-i18n="auto.s3.h4">Implementación</h4>
+        <p data-i18n="auto.s3.p">Construimos, integramos y probamos el flujo en un ambiente controlado.</p>
+      </div>
+      <div class="step reveal delay-3">
+        <div class="step-n">04</div>
+        <h4 data-i18n="auto.s4.h4">Optimización</h4>
+        <p data-i18n="auto.s4.p">Monitoreo continuo, ajustes y mejoras basadas en los resultados reales.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CTA -->
+<div class="cta-band">
+  <div class="container">
+    <span class="label" data-i18n="auto.band.label">¿Por dónde empezar?</span>
+    <h2 data-i18n="auto.band.h2">Identifica el proceso que más te cuesta tiempo</h2>
+    <p data-i18n="auto.band.p">Cuéntanoslo en una llamada de 30 minutos. Te decimos si lo podemos automatizar y cómo.</p>
+    <div class="cta-btns">
+      <a href="../index.html#contacto" class="btn btn-primary btn-lg">
+        <span data-i18n="auto.band.btn1">Agendar consulta</span> <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+      </a>
+      <a href="../index.html#servicios" class="btn btn-ghost btn-lg" data-i18n="cta.more">Ver más servicios</a>
+    </div>
+  </div>
+</div>
+
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="foot-brand">
+        <div class="logo-px"><span></span><span></span><span></span><span></span></div>
+        POXEL<span style="color:var(--blue-b)">BIT</span>
+      </div>
+      <div class="foot-copy" data-i18n="footer.copy">Culiacán, MX · Soluciones Digitales con IA © 2026</div>
+    </div>
+    <ul class="foot-links">
+      <li><a href="../index.html#servicios" data-i18n="nav.services">Servicios</a></li>
+      <li><a href="../yumm.html">YUMM</a></li>
+      <li><a href="../index.html#nosotros" data-i18n="nav.about">Nosotros</a></li>
+      <li><a href="../index.html#contacto" data-i18n="index.contact.label">Contacto</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="../i18n.js"></script>
+<script src="../script.js"></script>
+</body>
+</html>

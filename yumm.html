@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YUMM — Plataforma de Ventas Digital | PoxelBit</title>
+  <meta name="description" content="YUMM es la plataforma de ventas con menú digital en la nube. Ideal para restaurantes, cafeterías y negocios de productos. Actualización en tiempo real, sin apps.">
+  <script>
+    (function(){
+      var t=localStorage.getItem('pbTheme')||'dark';
+      var l=localStorage.getItem('pbLang')||'es';
+      if(t==='light')document.documentElement.setAttribute('data-theme','light');
+      document.documentElement.lang=l;
+    })();
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="scrolled">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-px"><span></span><span></span><span></span><span></span></div>
+      POXEL<span style="color:var(--blue-b)">BIT</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#servicios" data-i18n="nav.services">Servicios</a></li>
+      <li><a href="yumm.html" style="color:#fff">YUMM</a></li>
+      <li><a href="index.html#nosotros" data-i18n="nav.about">Nosotros</a></li>
+      <li><a href="index.html#contacto" class="cta" data-i18n="nav.cta">Platiquemos</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button class="ctrl-btn lang-btn" aria-label="Cambiar idioma">ES</button>
+      <button class="ctrl-btn theme-btn" aria-label="Cambiar tema">
+        <i data-lucide="sun" style="width:14px;height:14px;"></i>
+      </button>
+    </div>
+    <button class="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-mobile">
+  <a href="index.html#servicios" data-i18n="nav.services">Servicios</a>
+  <a href="yumm.html">YUMM</a>
+  <a href="index.html#nosotros" data-i18n="nav.about">Nosotros</a>
+  <a href="index.html#contacto" data-i18n="nav.cta">Platiquemos</a>
+  <div class="nav-mobile-ctrls">
+    <button class="ctrl-btn lang-btn" aria-label="Cambiar idioma">ES</button>
+    <button class="ctrl-btn theme-btn" aria-label="Cambiar tema">
+      <i data-lucide="sun" style="width:14px;height:14px;"></i>
+    </button>
+  </div>
+</div>
+
+
+<!-- HERO -->
+<div class="yumm-pg-hero">
+  <div class="pg-hero-grid"></div>
+  <div class="container">
+    <a href="index.html" class="back-link">
+      <i data-lucide="arrow-left" style="width:14px;height:14px;"></i> <span data-i18n="nav.back">Regresar</span>
+    </a>
+    <span class="label" data-i18n="yumm.label">Producto PoxelBit</span>
+    <h1 data-i18n-html="yumm.h1">YUMM — Tu menú digital,<br><span class="text-gradient">siempre actualizado.</span></h1>
+    <p class="pg-lead" style="max-width:560px;" data-i18n="yumm.lead">Plataforma de ventas en la nube con menú digital integrado. Sin aplicaciones que descargar, sin hardware especial — acceso directo desde cualquier dispositivo con un código QR.</p>
+
+    <div class="yumm-metrics">
+      <div class="ym-card reveal">
+        <div class="ym-num">QR</div>
+        <div class="ym-label" data-i18n="yumm.m1.l">Acceso instantáneo sin app</div>
+      </div>
+      <div class="ym-card reveal delay-1">
+        <div class="ym-num">RT</div>
+        <div class="ym-label" data-i18n="yumm.m2.l">Actualización en tiempo real</div>
+      </div>
+      <div class="ym-card reveal delay-2">
+        <div class="ym-num">IA</div>
+        <div class="ym-label" data-i18n="yumm.m3.l">Reportes y análisis inteligentes</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- DETAIL -->
+<section>
+  <div class="container">
+    <div class="yumm-detail">
+      <div class="reveal">
+        <span class="label" data-i18n="yumm.det.label">¿Qué es YUMM?</span>
+        <h2 data-i18n="yumm.det.h2">La herramienta que moderniza tu negocio gastronómico.</h2>
+        <p data-i18n="yumm.det.p1">YUMM es una plataforma SaaS desarrollada por PoxelBit que permite a restaurantes, cafeterías, food trucks y negocios similares digitalizar su operación de ventas de forma simple y efectiva.</p>
+        <p data-i18n="yumm.det.p2">Tu menú vive en la nube. Actualizar un precio, agregar un platillo o cambiar una foto toma segundos desde el panel de administración — y los clientes lo ven al instante.</p>
+        <ul class="yumm-feats">
+          <li data-i18n="yumm.det.f1">Menú digital accesible con código QR desde cualquier celular</li>
+          <li data-i18n="yumm.det.f2">Catálogo visual de productos con imágenes, descripciones y precios</li>
+          <li data-i18n="yumm.det.f3">Panel de administración intuitivo, sin conocimientos técnicos</li>
+          <li data-i18n="yumm.det.f4">Control de accesos para personal con roles diferenciados</li>
+          <li data-i18n="yumm.det.f5">Sistema de ventas integrado con historial y reportes</li>
+          <li data-i18n="yumm.det.f6">Reportes automáticos de productos más vendidos con IA</li>
+        </ul>
+        <a href="index.html#contacto" class="btn btn-primary btn-lg">
+          <span data-i18n="yumm.det.cta">Solicitar YUMM para mi negocio</span> <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+        </a>
+      </div>
+      <div class="reveal delay-2">
+        <div class="yumm-big-mockup">
+          <div class="m-header">
+            <div class="m-logo" style="font-size:1.1rem;">YUMM</div>
+            <div class="m-status">● En línea</div>
+          </div>
+          <div class="m-grid">
+            <div class="m-item"><div class="m-img"></div><div class="m-name">Tacos de birria</div><div class="m-price">$85.00</div></div>
+            <div class="m-item"><div class="m-img"></div><div class="m-name">Agua de jamaica</div><div class="m-price">$25.00</div></div>
+            <div class="m-item"><div class="m-img"></div><div class="m-name">Orden de quesadillas</div><div class="m-price">$120.00</div></div>
+            <div class="m-item"><div class="m-img"></div><div class="m-name">Pozole rojo</div><div class="m-price">$95.00</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- WHO IS IT FOR -->
+<section style="background:var(--bg-2); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+  <div class="container">
+    <div class="s-header center reveal">
+      <span class="label" data-i18n="yumm.who.label">¿Para quién?</span>
+      <h2 data-i18n="yumm.who.h2">Cualquier negocio que venda productos</h2>
+      <p data-i18n="yumm.who.sub">YUMM fue diseñado para ser flexible — si tienes algo que mostrar y vender, YUMM lo digitaliza.</p>
+    </div>
+    <div class="yumm-who">
+      <div class="who-card reveal">
+        <div class="wi"><i data-lucide="utensils" style="width:20px;height:20px;"></i></div>
+        <h3 data-i18n="yumm.w1.h3">Restaurantes y cocinas</h3>
+        <p data-i18n="yumm.w1.p">Menú digital actualizable al instante. Olvida los menús impresos.</p>
+      </div>
+      <div class="who-card reveal delay-1">
+        <div class="wi"><i data-lucide="coffee" style="width:20px;height:20px;"></i></div>
+        <h3 data-i18n="yumm.w2.h3">Cafeterías y bakeries</h3>
+        <p data-i18n="yumm.w2.p">Muestra tu catálogo del día con disponibilidad en tiempo real.</p>
+      </div>
+      <div class="who-card reveal delay-2">
+        <div class="wi"><i data-lucide="shopping-bag" style="width:20px;height:20px;"></i></div>
+        <h3 data-i18n="yumm.w3.h3">Tiendas y bazares</h3>
+        <p data-i18n="yumm.w3.p">Catálogo de productos con precios, fotos y control de inventario.</p>
+      </div>
+      <div class="who-card reveal">
+        <div class="wi"><i data-lucide="truck" style="width:20px;height:20px;"></i></div>
+        <h3 data-i18n="yumm.w4.h3">Food trucks</h3>
+        <p data-i18n="yumm.w4.p">Menú digital que tus clientes ven desde su celular mientras esperan.</p>
+      </div>
+      <div class="who-card reveal delay-1">
+        <div class="wi"><i data-lucide="star" style="width:20px;height:20px;"></i></div>
+        <h3 data-i18n="yumm.w5.h3">Eventos y catering</h3>
+        <p data-i18n="yumm.w5.p">Menú específico por evento. Actualizable minutos antes de comenzar.</p>
+      </div>
+      <div class="who-card reveal delay-2">
+        <div class="wi"><i data-lucide="layers" style="width:20px;height:20px;"></i></div>
+        <h3 data-i18n="yumm.w6.h3">Negocios con múltiples sedes</h3>
+        <p data-i18n="yumm.w6.p">Un panel central para administrar menús distintos en cada ubicación.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CTA -->
+<div class="cta-band">
+  <div class="container">
+    <span class="label" data-i18n="yumm.band.label">¿Interesado?</span>
+    <h2 data-i18n="yumm.band.h2">Empieza a usar YUMM hoy</h2>
+    <p data-i18n="yumm.band.p">Cuéntanos sobre tu negocio y te mostramos cómo YUMM puede transformar tu operación en menos de una semana.</p>
+    <div class="cta-btns">
+      <a href="index.html#contacto" class="btn btn-primary btn-lg">
+        <span data-i18n="yumm.band.btn1">Solicitar demostración</span> <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+      </a>
+      <a href="index.html#servicios" class="btn btn-ghost btn-lg" data-i18n="yumm.band.btn2">Ver todos los servicios</a>
+    </div>
+  </div>
+</div>
+
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="foot-brand">
+        <div class="logo-px"><span></span><span></span><span></span><span></span></div>
+        POXEL<span style="color:var(--blue-b)">BIT</span>
+      </div>
+      <div class="foot-copy" data-i18n="footer.copy">Culiacán, MX · Soluciones Digitales con IA © 2026</div>
+    </div>
+    <ul class="foot-links">
+      <li><a href="index.html#servicios" data-i18n="nav.services">Servicios</a></li>
+      <li><a href="yumm.html">YUMM</a></li>
+      <li><a href="index.html#nosotros" data-i18n="nav.about">Nosotros</a></li>
+      <li><a href="index.html#contacto" data-i18n="index.contact.label">Contacto</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="i18n.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
