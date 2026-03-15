@@ -82,8 +82,8 @@ const TRANSLATIONS = {
 
     /* ---- INDEX — ABOUT ---- */
     'index.about.label':  'Quiénes somos',
-    'index.about.h2':     'Ingeniería global,<br>raíces en Culiacán.',
-    'index.about.p1':     'PoxelBit nació como empresa familiar en Culiacán, Sinaloa, con un propósito claro: hacer que la tecnología funcione para los negocios de verdad. Hoy tenemos clientes en México, Estados Unidos y Canadá.',
+    'index.about.h2':     'Ingeniería global,<br>raíces en México.',
+    'index.about.p1':     'PoxelBit nació como empresa familiar en México, con un propósito claro: hacer que la tecnología funcione para los negocios de verdad. Hoy tenemos clientes en México, Estados Unidos y Canadá.',
     'index.about.p2':     'Más de 15 años construyendo sistemas que escalan, automatizando procesos y entregando productos digitales con precisión técnica y trato cercano.',
     'index.about.v1.h4':  'Modular',
     'index.about.v1.p':   'Tu sistema crece contigo, sin reconstruir desde cero.',
@@ -345,8 +345,8 @@ const TRANSLATIONS = {
 
     /* ---- INDEX — ABOUT ---- */
     'index.about.label':  'About Us',
-    'index.about.h2':     'Global engineering,<br>roots in Culiacán.',
-    'index.about.p1':     'PoxelBit was born as a family business in Culiacán, Sinaloa, with a clear purpose: making technology work for real businesses. Today we have clients in Mexico, the United States and Canada.',
+    'index.about.h2':     'Global engineering,<br>roots in México.',
+    'index.about.p1':     'PoxelBit was born as a family business in México, with a clear purpose: making technology work for real businesses. Today we have clients in Mexico, the United States and Canada.',
     'index.about.p2':     'Over 15 years building systems that scale, automating processes and delivering digital products with technical precision and personal care.',
     'index.about.v1.h4':  'Modular',
     'index.about.v1.p':   'Your system grows with you, no rebuilding from scratch.',

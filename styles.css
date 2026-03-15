@@ -99,10 +99,10 @@ nav.scrolled {
   display:flex; align-items:center; gap:10px;
   font-size:1.15rem; font-weight:900; letter-spacing:-0.03em;
 }
-.nav-logo-w { display:block; height:36px; width:auto; }
-.nav-logo-b { display:none;  height:36px; width:auto; }
-[data-theme="light"] .nav-logo-w { display:none; }
-[data-theme="light"] .nav-logo-b { display:block; }
+.nav-logo-w { display:none;  height:36px; width:auto; }
+.nav-logo-b { display:block; height:36px; width:auto; }
+[data-theme="light"] .nav-logo-w { display:block; }
+[data-theme="light"] .nav-logo-b { display:none; }
 .logo-px {
   display:grid; grid-template-columns:1fr 1fr; gap:3px; width:30px; height:30px;
 }

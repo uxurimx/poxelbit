@@ -13,9 +13,6 @@ class PbNav extends HTMLElement {
   connectedCallback() {
     const b        = this.getAttribute('base') || '';
     const scrolled = this.hasAttribute('scrolled') ? ' class="scrolled"' : '';
-    const page     = this.getAttribute('page') || '';
-    const yummStyle = page === 'yumm' ? ' style="color:#fff"' : '';
-
     this.insertAdjacentHTML('afterend', `
 <nav${scrolled}>
   <div class="nav-inner">
@@ -25,7 +22,6 @@ class PbNav extends HTMLElement {
     </a>
     <ul class="nav-links">
       <li><a href="${b}index.html#servicios" data-i18n="nav.services">Soluciones</a></li>
-      <li><a href="${b}yumm.html"${yummStyle}>YUMM</a></li>
       <li><a href="${b}index.html#nosotros" data-i18n="nav.about">Nosotros</a></li>
       <li><a href="${b}index.html#contacto" class="cta" data-i18n="nav.cta">Platiquemos</a></li>
     </ul>
@@ -40,7 +36,6 @@ class PbNav extends HTMLElement {
 </nav>
 <div class="nav-mobile">
   <a href="${b}index.html#servicios" data-i18n="nav.services">Soluciones</a>
-  <a href="${b}yumm.html">YUMM</a>
   <a href="${b}index.html#nosotros" data-i18n="nav.about">Nosotros</a>
   <a href="${b}index.html#contacto" data-i18n="nav.cta">Platiquemos</a>
   <div class="nav-mobile-ctrls">
@@ -70,7 +65,7 @@ class PbFooter extends HTMLElement {
     </div>
     <ul class="foot-links">
       <li><a href="${b}index.html#servicios" data-i18n="nav.services">Soluciones</a></li>
-      <li><a href="${b}yumm.html">YUMM</a></li>
+      <li><a href="https://yumm.lat" target="_blank" rel="noopener">YUMM</a></li>
       <li><a href="${b}index.html#nosotros" data-i18n="nav.about">Nosotros</a></li>
       <li><a href="${b}index.html#contacto" data-i18n="index.contact.label">Contacto</a></li>
     </ul>
