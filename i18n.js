@@ -12,7 +12,7 @@ const TRANSLATIONS = {
     'nav.cta':       'Platiquemos',
     'nav.back':      'Regresar',
     'nav.menu':      'Menú',
-    'footer.copy':   'Culiacán, MX · Soluciones Digitales con IA © 2026',
+    'footer.copy':   'México · Soluciones Digitales con IA © 2026',
 
     /* ---- FORM ---- */
     'form.name.label':  'Nombre',
@@ -94,7 +94,7 @@ const TRANSLATIONS = {
     'index.about.v4.h4':  'Internacional',
     'index.about.v4.p':   'Presencia activa en México, EUA y Canadá.',
     'index.about.stat.sub': 'Años de experiencia',
-    'index.about.flag1':  'Culiacán, Sinaloa — México',
+    'index.about.flag1':  'México',
     'index.about.flag2':  'PyMEs y emprendedores',
     'index.about.flag3':  'Expansión EUA y Canadá',
     'index.about.quote':  '"Calidad PoxelBit: entregas hasta un 30% más rápidas que el mercado estándar."',
@@ -103,9 +103,9 @@ const TRANSLATIONS = {
     'index.contact.label': 'Contacto',
     'index.contact.h2':    '¿Listo para dar el siguiente paso?',
     'index.contact.lead':  'Cuéntanos tu proyecto. Te respondemos en menos de 24 horas con una propuesta inicial sin compromiso.',
-    'index.contact.ch1':   'contacto@poxelbit.com',
+    'index.contact.ch1':   'poxelbit@gmail.com',
     'index.contact.ch2':   'WhatsApp — respuesta inmediata',
-    'index.contact.ch3':   'Culiacán, Sinaloa · México',
+    'index.contact.ch3':   'México',
 
     /* ---- IA PAGE ---- */
     'ia.label':       'IA & Agentes Inteligentes',
@@ -275,7 +275,7 @@ const TRANSLATIONS = {
     'nav.cta':       "Let's Talk",
     'nav.back':      'Back',
     'nav.menu':      'Menu',
-    'footer.copy':   'Culiacán, MX · Digital Solutions with AI © 2026',
+    'footer.copy':   'México · Digital Solutions with AI © 2026',
 
     /* ---- FORM ---- */
     'form.name.label':  'Name',
@@ -357,7 +357,7 @@ const TRANSLATIONS = {
     'index.about.v4.h4':  'International',
     'index.about.v4.p':   'Active presence in Mexico, US and Canada.',
     'index.about.stat.sub': 'Years of experience',
-    'index.about.flag1':  'Culiacán, Sinaloa — Mexico',
+    'index.about.flag1':  'México',
     'index.about.flag2':  'SMBs and entrepreneurs',
     'index.about.flag3':  'Expansion in US and Canada',
     'index.about.quote':  '"PoxelBit quality: deliveries up to 30% faster than the industry standard."',
@@ -366,9 +366,9 @@ const TRANSLATIONS = {
     'index.contact.label': 'Contact',
     'index.contact.h2':    'Ready to take the next step?',
     'index.contact.lead':  'Tell us about your project. We respond in under 24 hours with an initial proposal, no strings attached.',
-    'index.contact.ch1':   'contacto@poxelbit.com',
+    'index.contact.ch1':   'poxelbit@gmail.com',
     'index.contact.ch2':   'WhatsApp — immediate response',
-    'index.contact.ch3':   'Culiacán, Sinaloa · Mexico',
+    'index.contact.ch3':   'México',
 
     /* ---- IA PAGE ---- */
     'ia.label':       'AI & Intelligent Agents',
