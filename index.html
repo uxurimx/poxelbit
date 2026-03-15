@@ -15,48 +15,13 @@
       document.documentElement.lang=l;
     })();
   </script>
+  <script src="components.js"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- ===== NAV ===== -->
-<nav>
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo">
-      <img src="assets/logow.png" class="nav-logo-w" alt="PoxelBit">
-      <img src="assets/logob.png" class="nav-logo-b" alt="PoxelBit">
-    </a>
-    <ul class="nav-links">
-      <li><a href="#servicios" data-i18n="nav.services">Servicios</a></li>
-      <li><a href="yumm.html">YUMM</a></li>
-      <li><a href="#nosotros" data-i18n="nav.about">Nosotros</a></li>
-      <li><a href="#contacto" class="cta" data-i18n="nav.cta">Platiquemos</a></li>
-    </ul>
-    <div class="nav-controls">
-      <button class="ctrl-btn lang-btn" aria-label="Cambiar idioma">ES</button>
-      <button class="ctrl-btn theme-btn" aria-label="Cambiar tema">
-        <i data-lucide="sun" style="width:14px;height:14px;"></i>
-      </button>
-    </div>
-    <button class="hamburger" aria-label="Menú">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</nav>
-
-<div class="nav-mobile">
-  <a href="#servicios" data-i18n="nav.services">Servicios</a>
-  <a href="yumm.html">YUMM</a>
-  <a href="#nosotros" data-i18n="nav.about">Nosotros</a>
-  <a href="#contacto" data-i18n="nav.cta">Platiquemos</a>
-  <div class="nav-mobile-ctrls">
-    <button class="ctrl-btn lang-btn" aria-label="Cambiar idioma">ES</button>
-    <button class="ctrl-btn theme-btn" aria-label="Cambiar tema">
-      <i data-lucide="sun" style="width:14px;height:14px;"></i>
-    </button>
-  </div>
-</div>
+<pb-nav base=""></pb-nav>
 
 
 <!-- ===== HERO ===== -->
@@ -106,62 +71,70 @@
 </div>
 
 
-<!-- ===== SERVICES ===== -->
+<!-- ===== SOLUTIONS ===== -->
 <section id="servicios">
   <div class="container">
     <div class="s-header reveal">
       <span class="label" data-i18n="index.svc.label">Soluciones</span>
-      <h2 data-i18n-html="index.svc.h2">Todo lo que tu negocio<br>necesita, bajo un mismo techo.</h2>
-      <p data-i18n="index.svc.sub">Cada solución es diseñada desde cero, modular y lista para escalar con tu operación.</p>
+      <h2 data-i18n="index.svc.h2">Soluciones que tu negocio necesita</h2>
     </div>
-    <div class="svc-grid">
-      <div class="svc-card reveal">
-        <div class="svc-icon"><i data-lucide="brain-circuit" style="width:22px;height:22px;"></i></div>
-        <h3 data-i18n="index.svc.ia.h3">IA & Agentes</h3>
-        <p data-i18n="index.svc.ia.p">Agentes inteligentes entrenados para tu negocio. Atención al cliente, análisis de datos y automatización de flujos con IA nativa.</p>
-        <a href="servicios/ia-agentes.html" class="svc-arrow">
-          <span data-i18n="index.svc.ia.link">Explorar</span> <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
-        </a>
-      </div>
-      <div class="svc-card reveal delay-1">
-        <div class="svc-icon"><i data-lucide="layout" style="width:22px;height:22px;"></i></div>
-        <h3 data-i18n="index.svc.web.h3">Web & Apps</h3>
-        <p data-i18n="index.svc.web.p">Sitios corporativos, landing pages y apps web con diseño profesional. Incluye dominio, hosting y soporte técnico.</p>
-        <a href="servicios/web-apps.html" class="svc-arrow">
-          <span data-i18n="index.svc.web.link">Explorar</span> <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
-        </a>
-      </div>
-      <div class="svc-card reveal delay-2">
-        <div class="svc-icon"><i data-lucide="database" style="width:22px;height:22px;"></i></div>
-        <h3 data-i18n="index.svc.saas.h3">SaaS & CRM</h3>
-        <p data-i18n="index.svc.saas.p">Plataformas cloud con actualización en tiempo real. CRM personalizados y sistemas de gestión para tu equipo y tus clientes.</p>
-        <a href="servicios/saas-crm.html" class="svc-arrow">
-          <span data-i18n="index.svc.saas.link">Explorar</span> <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
-        </a>
-      </div>
-      <div class="svc-card reveal">
-        <div class="svc-icon"><i data-lucide="cpu" style="width:22px;height:22px;"></i></div>
-        <h3 data-i18n="index.svc.auto.h3">Automatización</h3>
-        <p data-i18n="index.svc.auto.p">Flujos inteligentes que eliminan tareas manuales. Integraciones entre sistemas y notificaciones automáticas potenciadas con IA.</p>
-        <a href="servicios/automatizacion.html" class="svc-arrow">
-          <span data-i18n="index.svc.auto.link">Explorar</span> <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
-        </a>
-      </div>
-      <div class="svc-card reveal delay-1">
-        <div class="svc-icon"><i data-lucide="shopping-bag" style="width:22px;height:22px;"></i></div>
-        <h3 data-i18n="index.svc.ecom.h3">E-commerce</h3>
-        <p data-i18n="index.svc.ecom.p">Tiendas digitales con catálogo, pasarela de pagos y gestión de pedidos integrada. Lista para vender desde el primer día.</p>
-        <a href="servicios/ecommerce.html" class="svc-arrow">
-          <span data-i18n="index.svc.ecom.link">Explorar</span> <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
-        </a>
-      </div>
-      <div class="svc-card reveal delay-2">
-        <div class="svc-icon"><i data-lucide="layers" style="width:22px;height:22px;"></i></div>
-        <h3 data-i18n="index.svc.cust.h3">Sistemas a la medida</h3>
-        <p data-i18n="index.svc.cust.p">Software empresarial y plataformas de organización construidos específicamente para tu operación, con arquitectura modular desde el origen.</p>
-        <a href="#contacto" class="svc-arrow">
-          <span data-i18n="index.svc.cust.link">Hablemos</span> <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
-        </a>
+    <div class="sol-card">
+      <div class="sol-grid">
+
+        <div class="sol-item">
+          <div class="sol-icon"><i data-lucide="brain-circuit" style="width:28px;height:28px;"></i></div>
+          <div class="sol-name" data-i18n="index.svc.ia.h3">IA & Agentes</div>
+          <a href="servicios/ia-agentes.html" class="sol-link">
+            <span data-i18n="index.svc.ia.link">Explorar</span>
+            <i data-lucide="arrow-right" style="width:12px;height:12px;"></i>
+          </a>
+        </div>
+
+        <div class="sol-item">
+          <div class="sol-icon"><i data-lucide="layout" style="width:28px;height:28px;"></i></div>
+          <div class="sol-name" data-i18n="index.svc.web.h3">Web & Apps</div>
+          <a href="servicios/web-apps.html" class="sol-link">
+            <span data-i18n="index.svc.web.link">Explorar</span>
+            <i data-lucide="arrow-right" style="width:12px;height:12px;"></i>
+          </a>
+        </div>
+
+        <div class="sol-item">
+          <div class="sol-icon"><i data-lucide="database" style="width:28px;height:28px;"></i></div>
+          <div class="sol-name" data-i18n="index.svc.saas.h3">SaaS & CRM</div>
+          <a href="servicios/saas-crm.html" class="sol-link">
+            <span data-i18n="index.svc.saas.link">Explorar</span>
+            <i data-lucide="arrow-right" style="width:12px;height:12px;"></i>
+          </a>
+        </div>
+
+        <div class="sol-item">
+          <div class="sol-icon"><i data-lucide="cpu" style="width:28px;height:28px;"></i></div>
+          <div class="sol-name" data-i18n="index.svc.auto.h3">Automatización</div>
+          <a href="servicios/automatizacion.html" class="sol-link">
+            <span data-i18n="index.svc.auto.link">Explorar</span>
+            <i data-lucide="arrow-right" style="width:12px;height:12px;"></i>
+          </a>
+        </div>
+
+        <div class="sol-item">
+          <div class="sol-icon"><i data-lucide="shopping-bag" style="width:28px;height:28px;"></i></div>
+          <div class="sol-name" data-i18n="index.svc.ecom.h3">E-commerce</div>
+          <a href="servicios/ecommerce.html" class="sol-link">
+            <span data-i18n="index.svc.ecom.link">Explorar</span>
+            <i data-lucide="arrow-right" style="width:12px;height:12px;"></i>
+          </a>
+        </div>
+
+        <div class="sol-item">
+          <div class="sol-icon"><i data-lucide="layers" style="width:28px;height:28px;"></i></div>
+          <div class="sol-name" data-i18n="index.svc.cust.h3">Sistemas a la medida</div>
+          <a href="#contacto" class="sol-link">
+            <span data-i18n="index.svc.cust.link">Hablemos</span>
+            <i data-lucide="arrow-right" style="width:12px;height:12px;"></i>
+          </a>
+        </div>
+
       </div>
     </div>
   </div>
@@ -324,24 +297,7 @@
 </section>
 
 
-<!-- ===== FOOTER ===== -->
-<footer>
-  <div class="footer-inner">
-    <div>
-      <div class="foot-brand">
-        <div class="logo-px"><span></span><span></span><span></span><span></span></div>
-        POXEL<span style="color:var(--blue-b)">BIT</span>
-      </div>
-      <div class="foot-copy" data-i18n="footer.copy">México · Soluciones Digitales con IA © 2026</div>
-    </div>
-    <ul class="foot-links">
-      <li><a href="#servicios" data-i18n="nav.services">Servicios</a></li>
-      <li><a href="yumm.html">YUMM</a></li>
-      <li><a href="#nosotros" data-i18n="nav.about">Nosotros</a></li>
-      <li><a href="#contacto" data-i18n="index.contact.label">Contacto</a></li>
-    </ul>
-  </div>
-</footer>
+<pb-footer base=""></pb-footer>
 
 <script src="i18n.js"></script>
 <script src="script.js"></script>

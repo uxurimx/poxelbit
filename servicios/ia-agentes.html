@@ -13,44 +13,13 @@
       document.documentElement.lang=l;
     })();
   </script>
+  <script src="../components.js"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 
-<nav class="scrolled">
-  <div class="nav-inner">
-    <a href="../index.html" class="nav-logo">
-      <img src="../assets/logow.png" class="nav-logo-w" alt="PoxelBit">
-      <img src="../assets/logob.png" class="nav-logo-b" alt="PoxelBit">
-    </a>
-    <ul class="nav-links">
-      <li><a href="../index.html#servicios" data-i18n="nav.services">Servicios</a></li>
-      <li><a href="../yumm.html">YUMM</a></li>
-      <li><a href="../index.html#nosotros" data-i18n="nav.about">Nosotros</a></li>
-      <li><a href="../index.html#contacto" class="cta" data-i18n="nav.cta">Platiquemos</a></li>
-    </ul>
-    <div class="nav-controls">
-      <button class="ctrl-btn lang-btn" aria-label="Cambiar idioma">ES</button>
-      <button class="ctrl-btn theme-btn" aria-label="Cambiar tema">
-        <i data-lucide="sun" style="width:14px;height:14px;"></i>
-      </button>
-    </div>
-    <button class="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
-  </div>
-</nav>
-<div class="nav-mobile">
-  <a href="../index.html#servicios" data-i18n="nav.services">Servicios</a>
-  <a href="../yumm.html">YUMM</a>
-  <a href="../index.html#nosotros" data-i18n="nav.about">Nosotros</a>
-  <a href="../index.html#contacto" data-i18n="nav.cta">Platiquemos</a>
-  <div class="nav-mobile-ctrls">
-    <button class="ctrl-btn lang-btn" aria-label="Cambiar idioma">ES</button>
-    <button class="ctrl-btn theme-btn" aria-label="Cambiar tema">
-      <i data-lucide="sun" style="width:14px;height:14px;"></i>
-    </button>
-  </div>
-</div>
+<pb-nav base="../" scrolled></pb-nav>
 
 
 <!-- HERO -->
@@ -164,23 +133,7 @@
 </div>
 
 
-<footer>
-  <div class="footer-inner">
-    <div>
-      <div class="foot-brand">
-        <div class="logo-px"><span></span><span></span><span></span><span></span></div>
-        POXEL<span style="color:var(--blue-b)">BIT</span>
-      </div>
-      <div class="foot-copy" data-i18n="footer.copy">México · Soluciones Digitales con IA © 2026</div>
-    </div>
-    <ul class="foot-links">
-      <li><a href="../index.html#servicios" data-i18n="nav.services">Servicios</a></li>
-      <li><a href="../yumm.html">YUMM</a></li>
-      <li><a href="../index.html#nosotros" data-i18n="nav.about">Nosotros</a></li>
-      <li><a href="../index.html#contacto" data-i18n="index.contact.label">Contacto</a></li>
-    </ul>
-  </div>
-</footer>
+<pb-footer base="../"></pb-footer>
 
 <script src="../i18n.js"></script>
 <script src="../script.js"></script>

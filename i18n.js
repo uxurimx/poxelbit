@@ -7,7 +7,7 @@
 const TRANSLATIONS = {
   es: {
     /* ---- NAV & COMMON ---- */
-    'nav.services':  'Servicios',
+    'nav.services':  'Soluciones',
     'nav.about':     'Nosotros',
     'nav.cta':       'Platiquemos',
     'nav.back':      'Regresar',
@@ -49,7 +49,7 @@ const TRANSLATIONS = {
 
     /* ---- INDEX — SERVICES ---- */
     'index.svc.label':     'Soluciones',
-    'index.svc.h2':        'Todo lo que tu negocio<br>necesita, bajo un mismo techo.',
+    'index.svc.h2':        'Soluciones que tu negocio necesita',
     'index.svc.sub':       'Cada solución es diseñada desde cero, modular y lista para escalar con tu operación.',
     'index.svc.ia.h3':     'IA & Agentes',
     'index.svc.ia.p':      'Agentes inteligentes entrenados para tu negocio. Atención al cliente, análisis de datos y automatización de flujos con IA nativa.',
@@ -270,7 +270,7 @@ const TRANSLATIONS = {
 
   en: {
     /* ---- NAV & COMMON ---- */
-    'nav.services':  'Services',
+    'nav.services':  'Solutions',
     'nav.about':     'About',
     'nav.cta':       "Let's Talk",
     'nav.back':      'Back',
@@ -312,7 +312,7 @@ const TRANSLATIONS = {
 
     /* ---- INDEX — SERVICES ---- */
     'index.svc.label':     'Solutions',
-    'index.svc.h2':        'Everything your business<br>needs, under one roof.',
+    'index.svc.h2':        'Solutions your business needs',
     'index.svc.sub':       'Every solution is designed from scratch, modular and ready to scale with your operation.',
     'index.svc.ia.h3':     'AI & Agents',
     'index.svc.ia.p':      'Intelligent agents trained for your business. Customer service, data analysis and workflow automation with native AI.',

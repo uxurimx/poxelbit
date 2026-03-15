@@ -205,7 +205,7 @@ function initReveal() {
     });
   }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
-  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+  document.querySelectorAll('.reveal, .sol-item').forEach(el => obs.observe(el));
 }
 
 
