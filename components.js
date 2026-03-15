@@ -61,7 +61,7 @@ class PbFooter extends HTMLElement {
         <img src="${b}assets/logow.png" class="nav-logo-w" alt="PoxelBit" style="height:28px;width:auto;">
         <img src="${b}assets/logob.png" class="nav-logo-b" alt="PoxelBit" style="height:28px;width:auto;">
       </div>
-      <div class="foot-copy" data-i18n="footer.copy">México · Soluciones Digitales con IA © 2026</div>
+      <div class="foot-copy" data-i18n="footer.copy">México · Soluciones Digitales con IA</div>
     </div>
     <ul class="foot-links">
       <li><a href="${b}index.html#servicios" data-i18n="nav.services">Soluciones</a></li>

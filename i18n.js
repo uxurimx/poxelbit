@@ -12,7 +12,7 @@ const TRANSLATIONS = {
     'nav.cta':       'Platiquemos',
     'nav.back':      'Regresar',
     'nav.menu':      'Menú',
-    'footer.copy':   'México · Soluciones Digitales con IA © 2026',
+    'footer.copy':   'México · Soluciones Digitales con IA',
 
     /* ---- FORM ---- */
     'form.name.label':  'Nombre',
@@ -275,7 +275,7 @@ const TRANSLATIONS = {
     'nav.cta':       "Let's Talk",
     'nav.back':      'Back',
     'nav.menu':      'Menu',
-    'footer.copy':   'México · Digital Solutions with AI © 2026',
+    'footer.copy':   'México · Digital Solutions with AI',
 
     /* ---- FORM ---- */
     'form.name.label':  'Name',
